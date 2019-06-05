@@ -1,0 +1,19 @@
+# zsh aliases
+
+alias lal='ls -al'
+alias lal='ls -al'
+alias la='ls -a'
+
+alias jq='jq -C'				# colorize json
+alias nz='nano ~/.zshrc'		# edit zsh config
+alias sz='source ~/.zshrc'		# reload zsh config
+alias nano='nano -Palmic -J 80'	# open nano with preferred options
+alias finder='open .'			# open Finder window in current directory
+
+## git aliases
+alias g='git'
+alias gb='git branch'
+alias gc='git checkout'
+alias gm='git commit -m'
+alias gs='git status'
+alias gl='git log --graph --pretty=format:"%Cred %h %Cgreen %cn %Cblue %ci %Creset'
