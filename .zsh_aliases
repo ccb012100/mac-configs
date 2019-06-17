@@ -1,14 +1,22 @@
 # zsh aliases
 
-alias lal='ls -al'
-alias lal='ls -al'
 alias la='ls -a'
+alias lal='ls -al'
 
-alias jq='jq -C'				# colorize json
-alias nz='nano ~/.zshrc'		# edit zsh config
-alias sz='source ~/.zshrc'		# reload zsh config
-alias nano='nano -Palmic -J 80'	# open nano with preferred options
-alias finder='open .'			# open Finder window in current directory
+alias cls='clear'					# clear screen
+alias finder='open .'				# open Finder window in current directory
+alias jq='jq -C'					# colorize json
+alias n='nano'
+alias nano='nano -Palmic -J 80'
+#alias emacs='emacsclient -nc'		# open emacsclient
+alias em='emacs'
+
+alias dotzsh='nano ~/.zshrc'		# edit zsh config
+alias dotemacs='nano ~/.emacs'		# edit emacs profile
+alias srczsh='source ~/.zshrc'		# reload zsh config
+
+# open Slack in dev mode
+alias slack='export SLACK_DEVELOPER_MENU=true; open -a /Applications/Slack.app'
 
 ## git aliases
 alias g='git'
@@ -16,4 +24,4 @@ alias gb='git branch'
 alias gc='git checkout'
 alias gm='git commit -m'
 alias gs='git status'
-alias gl='git log --graph --pretty=format:"%Cred %h %Cgreen %cn %Cblue %ci %Creset'
+alias gl='git log --graph --pretty=format:"%Cred %h %Cgreen %cn %Cblue %ci %Creset"'
