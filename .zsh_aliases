@@ -8,8 +8,8 @@ alias finder='open .'				# open Finder window in current directory
 alias jq='jq -C'					# colorize json
 alias n='nano'
 alias nano='nano -Palmic -J 80'
-#alias emacs='emacsclient -nc'		# open emacsclient
-alias em='emacs'
+alias emacs='emacsclient -n'		# use emacsclient
+alias e='emacs'
 
 alias dotzsh='nano ~/.zshrc'		# edit zsh config
 alias dotemacs='nano ~/.emacs'		# edit emacs profile
@@ -20,6 +20,7 @@ alias slack='export SLACK_DEVELOPER_MENU=true; open -a /Applications/Slack.app'
 
 ## git aliases
 alias g='git'
+alias gadd='git add .'
 alias gb='git branch'
 alias gc='git checkout'
 alias gm='git commit -m'
