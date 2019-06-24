@@ -26,6 +26,18 @@ none
 | left_alt (equal to \`left_option\`)    | left_command  |
 | right_gui (equal to \`right_command\`) | right_option  |
 
+## function keys
+
+### for all devices
+
+none
+
+### Ducky One 2
+
+`Target Devices: USB-HID Keyboard (No manufacturer name)`
+
+check the checkbox `Use all F1, F2, etc. keys as standard function keys`
+
 ## complex modifications
 
 ### from website

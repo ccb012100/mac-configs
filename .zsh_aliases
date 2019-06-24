@@ -8,7 +8,7 @@ alias finder='open .'				# open Finder window in current directory
 alias jq='jq -C'					# colorize json
 alias n='nano'
 alias nano='nano -Palmic -J 80'
-alias emacs='emacsclient -n'		# use emacsclient
+alias emacs='emacsclient -nc'		# use emacsclient
 alias e='emacs'
 
 alias dotzsh='nano ~/.zshrc'		# edit zsh config
@@ -23,6 +23,6 @@ alias g='git'
 alias gadd='git add .'
 alias gb='git branch'
 alias gc='git checkout'
-alias gm='git commit -m'
+alias gcm='git commit -m'
 alias gs='git status'
-alias gl='git log --graph --pretty=format:"%Cred %h %Cgreen %cn %Cblue %ci %Creset"'
+alias gl='git log --graph --pretty=format:"%Cred %h %Cgreen %cn %Cblue %ci %Cred %s %Creset"'

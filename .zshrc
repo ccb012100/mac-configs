@@ -30,4 +30,5 @@ setopt cdable_vars               	# directory aliases for cd command
 . ~/.zsh_unalias					# remove aliases set by zsh
 . ~/.zsh_machine-specific-aliases	# aliases for using on a specific machine
 
-new-frame() { emacsclient -e "(new-frame)" }	# open new emacs-frame
+#new-frame() { emacsclient -e "(new-frame)" }	# open new emacs-frame
+bindkey '^ ' autosuggest-accept		# for zsh-autosuggestions: Ctrl+SPACE to accept
