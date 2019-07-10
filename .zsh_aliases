@@ -1,18 +1,22 @@
 # zsh aliases
 
+alias ls='exa'						# use exa as ls replacement
 alias la='ls -a'
 alias lal='ls -al'
 
 alias cls='clear'					# clear screen
+alias dr='dotnet run'
+alias db='dotnet build'
+alias e='emacs'
+alias emacs='emacsclient -nc'		# use emacsclient
 alias finder='open .'				# open Finder window in current directory
 alias jq='jq -C'					# colorize json
 alias n='nano'
 alias nano='nano -Palmic -J 80'
-alias emacs='emacsclient -nc'		# use emacsclient
-alias e='emacs'
+alias tree='exa --tree --level=2'
 
-alias dotzsh='nano ~/.zshrc'		# edit zsh config
 alias dotemacs='nano ~/.emacs'		# edit emacs profile
+alias dotzsh='nano ~/.zshrc'		# edit zsh config
 alias srczsh='source ~/.zshrc'		# reload zsh config
 
 # open Slack in dev mode
@@ -24,5 +28,5 @@ alias gadd='git add .'
 alias gb='git branch'
 alias gc='git checkout'
 alias gcm='git commit -m'
-alias gs='git status'
 alias gl='git log --graph --pretty=format:"%Cred %h %Cgreen %cn %Cblue %ci %Cred %s %Creset"'
+alias gs='git status'
