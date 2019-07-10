@@ -2,16 +2,11 @@
 	excludesfile = /Users/cbocardo/.gitignore_global
 	autocrlf = input
 	pager = diff-so-fancy | less --tabs=4 -RFX
-[merge]
-	tool = ediff
-[mergetool "ediff"]
-	cmd = emacs --eval \"(ediff-merge-files-with-ancestor \\\"$LOCAL\\\" \\\"$REMOTE\\\" \\\"$BASE\\\" nil \\\"$MERGED\\\")\"
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+[user]
+	name = Christopher Bocardo
+	email = email@mail.com
+[commit]
+	template = /Users/cbocardo/.stCommitMsg
 [color]
 	ui = true
 [color "diff-highlight"]
@@ -32,3 +27,15 @@
 	cm = commit -m
 	amend = commit -a --amend
 	undo = reset HEAD~1 --mixed # resets the previous commit, but keeps all the changes from that commit in the working directory
+    a = add .
+    b = branch
+    c = checkout
+    l = log --graph --pretty=format:"%Cred %h %Cgreen %cn %Cblue %ci %Cred %s %Creset"
+    s = status
+[merge]
+	tool = diffmerge
+[mergetool "diffmerge"]
+	cmd = diffmerge --merge --result=$MERGED $LOCAL $BASE $REMOTE
+	trustExitCode = true
+[difftool "vscode"]
+	cmd = code --wait --diff $LOCAL $REMOTE
