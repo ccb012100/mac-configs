@@ -30,7 +30,7 @@
     a = add .
     b = branch
     c = checkout
-    l = log --graph --pretty=format:"%Cred %h %Cgreen %cn %Cblue %ci %Cred %s %Creset"
+    l = log --graph --pretty='format:%Cred %h %Cgreen %cn %Cblue %ci %Cred %s %Creset'
     s = status
 [merge]
 	tool = diffmerge
