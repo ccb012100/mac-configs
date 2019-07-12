@@ -1,5 +1,6 @@
 #!/bin/zsh
 rsync -ti --progress /Users/cbocardo/.emacs.d/init.el /Users/cbocardo/ccb012100/emacs/.emacs.d/
+rsync -ti --progress /Users/cbocardo/.emacs.d/defuns.el /Users/cbocardo/ccb012100/emacs/.emacs.d/
 rsync -ti --progress /Users/cbocardo/.emacs.d/keybindings.el /Users/cbocardo/ccb012100/emacs/.emacs.d/
 rsync -ti --progress /Users/cbocardo/.emacs.d/macOS.el /Users/cbocardo/ccb012100/emacs/.emacs.d/
 rsync -ti --progress /Users/cbocardo/.emacs.d/packages.el /Users/cbocardo/ccb012100/emacs/.emacs.d/

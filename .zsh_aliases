@@ -5,8 +5,7 @@ alias la='ls -a'
 alias lal='ls -al'
 
 alias cls='clear'					# clear screen
-alias dr='dotnet run'
-alias db='dotnet build'
+alias d='dotnet'
 alias e='emacs'
 alias emacs='emacsclient -nc'		# use emacsclient
 alias finder='open .'				# open Finder window in current directory

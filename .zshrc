@@ -26,6 +26,8 @@ function cl { cd "$@" && ls -F } 	# cd then ls
 function cla { cd "$@" && ls -a } 	# cd then ls -a
 setopt cdable_vars               	# directory aliases for cd command
 
+. ~/tools/z/z.sh					# z -jump around [https://github.com/rupa/z]
+
 . ~/.zsh_aliases					# custom aliases
 . ~/.zsh_unalias					# remove aliases set by zsh
 . ~/.zsh_machine-specific-aliases	# aliases for using on a specific machine
