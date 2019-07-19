@@ -1,0 +1,43 @@
+﻿<MonoDevelopProperties version="2.0">
+  <Property key="/MonoDevelop/Ide/GlobalOptionsDialog-lastPanel" value="GeneralAuthorInfo" />
+  <Property key="Author.Copyright" value="" />
+  <Property key="Author.Name" value="" />
+  <Property key="ColorScheme" value="Oblivion" />
+  <Property key="ColorScheme-Dark" value="Gruvbox" />
+  <Property key="DefaultCommentFolding" value="False" />
+  <Property key="DotNetCore.DismissedSurveysList">
+    <ArrayOfString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <string>DotNetCore.NSATHaTSSurvey</string>
+    </ArrayOfString>
+  </Property>
+  <Property key="EnableQuickDiff" value="True" />
+  <Property key="FavoriteRecentFiles" />
+  <Property key="FontProperties">
+    <Property key="Editor" value="Fira Code 12" />
+    <Property key="OutputPad" value="Inconsolata 11" />
+    <Property key="Pad" value="FontAwesome 11" />
+  </Property>
+  <Property key="HighlightCaretLine" value="True" />
+  <Property key="IncludeWhitespaces" value="All" />
+  <Property key="MonoDevelop.Core.FirstRun" value="False" />
+  <Property key="MonoDevelop.Core.Gui.Dialogs.NewProjectDialog.DefaultPath" value="/Users/cbocardo/code" />
+  <Property key="MonoDevelop.Core.LastRunVersion" value="8.1.5.9" />
+  <Property key="MonoDevelop.FindReplaceDialogs.FindHistory" value="seed&#xA;route" />
+  <Property key="MonoDevelop.Ide.AddinUpdater.LastCheck" value="07/19/2019 09:22:07" />
+  <Property key="MonoDevelop.Ide.AddinUpdater.UpdateChannel" value="Stable" />
+  <Property key="MonoDevelop.Ide.BeforeCompileAction" value="PromptForSave" />
+  <Property key="MonoDevelop.Ide.UserInterfaceTheme" value="Dark" />
+  <Property key="MonoDevelop.Unity.Configuration.Settings.PersistentDebugTargets">
+    <ArrayOfPersistentDebugTarget xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+  </Property>
+  <Property key="MonoDevelop.Unity.Surveys.DismissedSurveysList" />
+  <Property key="Monodevelop.TaskList.ActiveView" value="MonoDevelop.Ide.Tasks.CommentTasksView" />
+  <Property key="SharpDevelop.TaskList.LogSeparatorPosition" value="0.48795552810376774" />
+  <Property key="SharpDevelop.Workbench.WorkbenchMemento">
+    <Property key="bounds" value="-2, 23, 1903, 984" />
+    <Property key="windowState" value="0" />
+  </Property>
+  <Property key="TextEditor.CSharp.Specific.Closed File Diagnostic" value="False" />
+  <Property key="TextEditor.CSharp.Specific.UseImplicitTypeWhereApparent" value="&lt;CodeStyleOption SerializationVersion=&quot;1&quot; Type=&quot;Boolean&quot; Value=&quot;true&quot; DiagnosticSeverity=&quot;Hidden&quot; /&gt;" />
+  <Property key="WordWrapStyle" value="WordWrap, VisibleGlyphs, AutoIndent" />
+</MonoDevelopProperties>
