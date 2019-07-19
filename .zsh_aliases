@@ -2,7 +2,7 @@
 
 alias ls='exa'						# use exa as ls replacement
 alias la='ls -a'
-alias lal='ls -al'
+alias lal='ll -a'
 
 alias cls='clear'					# clear screen
 alias d='dotnet'
