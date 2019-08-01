@@ -51,12 +51,19 @@
     <keyboard-shortcut first-keystroke="shift ctrl meta u" />
   </action>
   <action id="EditorDuplicate" />
-  <action id="EditorEscape">
-    <keyboard-shortcut first-keystroke="escape" second-keystroke="escape" />
-    <keyboard-shortcut first-keystroke="ctrl g" />
-  </action>
   <action id="EditorJoinLines">
     <keyboard-shortcut first-keystroke="ctrl j" />
+  </action>
+  <action id="EditorLeft">
+    <keyboard-shortcut first-keystroke="left" />
+    <keyboard-shortcut first-keystroke="ctrl b" />
+    <keyboard-shortcut first-keystroke="meta u" />
+  </action>
+  <action id="EditorLineStart">
+    <keyboard-shortcut first-keystroke="home" />
+    <keyboard-shortcut first-keystroke="ctrl a" />
+    <keyboard-shortcut first-keystroke="alt m" />
+    <keyboard-shortcut first-keystroke="ctrl o" />
   </action>
   <action id="EditorNextWord">
     <keyboard-shortcut first-keystroke="ctrl meta f" />
@@ -70,12 +77,14 @@
   </action>
   <action id="EditorRight">
     <keyboard-shortcut first-keystroke="right" />
+    <keyboard-shortcut first-keystroke="meta i" />
   </action>
   <action id="EditorSelectWord">
     <keyboard-shortcut first-keystroke="meta at" />
     <keyboard-shortcut first-keystroke="shift meta 2" />
     <keyboard-shortcut first-keystroke="ctrl w" />
   </action>
+  <action id="EditorSplitLine" />
   <action id="EditorTextEnd">
     <keyboard-shortcut first-keystroke="shift meta period" />
     <keyboard-shortcut first-keystroke="meta greater" />
@@ -190,15 +199,12 @@
   <action id="Emacs+.TransposeChars" />
   <action id="Emacs+.TransposeLines" />
   <action id="Emacs+.TransposeWords" />
-  <action id="Emacs+.UpcaseWord">
-    <keyboard-shortcut first-keystroke="meta u" />
-  </action>
+  <action id="Emacs+.UpcaseWord" />
   <action id="Emacs+.YankPop">
     <keyboard-shortcut first-keystroke="meta y" />
   </action>
   <action id="EmacsStyleIndent">
     <keyboard-shortcut first-keystroke="tab" />
-    <keyboard-shortcut first-keystroke="meta i" />
   </action>
   <action id="FileChooser.NewFolder" />
   <action id="Find">
@@ -216,8 +222,8 @@
   </action>
   <action id="GotoDeclaration">
     <keyboard-shortcut first-keystroke="meta period" />
-    <keyboard-shortcut first-keystroke="escape" second-keystroke="period" />
     <mouse-shortcut keystroke="control button1" />
+    <keyboard-shortcut first-keystroke="f12" />
   </action>
   <action id="GotoImplementation" />
   <action id="GotoLine">
@@ -234,6 +240,7 @@
   <action id="Images.Editor.ToggleGrid" />
   <action id="ImplementMethods" />
   <action id="InsertLiveTemplate" />
+  <action id="JumpToLastWindow" />
   <action id="List-selectNextColumn">
     <keyboard-shortcut first-keystroke="right" />
   </action>
@@ -245,16 +252,14 @@
     <keyboard-shortcut first-keystroke="meta up" />
     <keyboard-shortcut first-keystroke="ctrl meta a" />
   </action>
-  <action id="NavBar-cancel">
-    <keyboard-shortcut first-keystroke="escape" second-keystroke="escape" />
-  </action>
   <action id="NextTab">
     <keyboard-shortcut first-keystroke="alt right" />
     <keyboard-shortcut first-keystroke="ctrl x" second-keystroke="n" />
     <keyboard-shortcut first-keystroke="meta o" />
   </action>
-  <action id="PopupMenu-cancel">
-    <keyboard-shortcut first-keystroke="escape" second-keystroke="escape" />
+  <action id="ParameterInfo">
+    <keyboard-shortcut first-keystroke="shift alt p" />
+    <keyboard-shortcut first-keystroke="ctrl h" second-keystroke="p" />
   </action>
   <action id="PreviousTab">
     <keyboard-shortcut first-keystroke="alt left" />
@@ -268,6 +273,7 @@
     <keyboard-shortcut first-keystroke="shift ctrl alt t" />
     <keyboard-shortcut first-keystroke="ctrl k" second-keystroke="ctrl r" />
   </action>
+  <action id="RiderTypeHierarchy.BaseOnThisType" />
   <action id="RiderUnitTestAppendTestsAction" />
   <action id="RiderUnitTestCoverSolutionAction" />
   <action id="RiderUnitTestDebugContextAction" />
@@ -315,9 +321,18 @@
   <action id="Table-selectNextColumn">
     <keyboard-shortcut first-keystroke="right" />
   </action>
+  <action id="Terminal.MoveToEditor">
+    <keyboard-shortcut first-keystroke="meta 0" />
+  </action>
+  <action id="Terminal.SwitchFocusToEditor">
+    <keyboard-shortcut first-keystroke="escape" />
+    <keyboard-shortcut first-keystroke="ctrl x" second-keystroke="ctrl o" />
+  </action>
   <action id="TodoViewGroupByFlattenPackage" />
   <action id="TodoViewGroupByShowPackages" />
   <action id="Tree-scrollUpChangeSelection" />
+  <action id="TypeHierarchy" />
+  <action id="TypeHierarchyBase.BaseOnThisType" />
   <action id="Vcs.Log.FocusTextFilter" />
   <action id="ViewSource" />
   <action id="XDebugger.ToggleSortValues">
