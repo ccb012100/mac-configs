@@ -32,6 +32,7 @@
   </action>
   <action id="Console.Execute.Multiline" />
   <action id="Console.Jdbc.Execute" />
+  <action id="Console.TableResult.FindInGrid" />
   <action id="Console.TableResult.Submit" />
   <action id="DirDiffMenu.SynchronizeDiff.All" />
   <action id="Editor Redo">
@@ -52,12 +53,12 @@
   </action>
   <action id="EditorDuplicate" />
   <action id="EditorJoinLines">
-    <keyboard-shortcut first-keystroke="ctrl j" />
+    <keyboard-shortcut first-keystroke="ctrl k" second-keystroke="j" />
   </action>
   <action id="EditorLeft">
     <keyboard-shortcut first-keystroke="left" />
     <keyboard-shortcut first-keystroke="ctrl b" />
-    <keyboard-shortcut first-keystroke="meta u" />
+    <keyboard-shortcut first-keystroke="ctrl j" />
   </action>
   <action id="EditorLineStart">
     <keyboard-shortcut first-keystroke="home" />
@@ -74,10 +75,6 @@
   <action id="EditorPageUp" />
   <action id="EditorPreviousWord">
     <keyboard-shortcut first-keystroke="ctrl meta b" />
-  </action>
-  <action id="EditorRight">
-    <keyboard-shortcut first-keystroke="right" />
-    <keyboard-shortcut first-keystroke="meta i" />
   </action>
   <action id="EditorSelectWord">
     <keyboard-shortcut first-keystroke="meta at" />
@@ -207,9 +204,6 @@
     <keyboard-shortcut first-keystroke="tab" />
   </action>
   <action id="FileChooser.NewFolder" />
-  <action id="Find">
-    <keyboard-shortcut first-keystroke="ctrl f" />
-  </action>
   <action id="FindInPath">
     <keyboard-shortcut first-keystroke="shift meta f" />
   </action>
@@ -302,7 +296,7 @@
     <keyboard-shortcut first-keystroke="meta p" />
   </action>
   <action id="SearchEverywhere">
-    <keyboard-shortcut first-keystroke="meta e" />
+    <keyboard-shortcut first-keystroke="ctrl k" second-keystroke="f" />
   </action>
   <action id="ShowIntentionActions">
     <keyboard-shortcut first-keystroke="alt enter" />
@@ -334,6 +328,7 @@
   <action id="TypeHierarchy" />
   <action id="TypeHierarchyBase.BaseOnThisType" />
   <action id="Vcs.Log.FocusTextFilter" />
+  <action id="Vcs.Log.GoToRef" />
   <action id="ViewSource" />
   <action id="XDebugger.ToggleSortValues">
     <keyboard-shortcut first-keystroke="ctrl k" second-keystroke="s" />
