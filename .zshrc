@@ -1,4 +1,4 @@
-export PATH=~/tools:$PATH
+export PATH=~/.dotnet/tools:~/tools:$PATH
 export ZSH="/Users/cbocardo/.oh-my-zsh" # Path to oh-my-zsh installation
 export ALTERNATE_EDITOR=""
 export EDITOR="emacsclient -t"                  # $EDITOR opens in terminal
