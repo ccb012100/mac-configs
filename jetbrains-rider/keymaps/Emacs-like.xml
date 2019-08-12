@@ -1,4 +1,7 @@
 <keymap version="1" name="Emacs-like" parent="Emacs+">
+  <action id="$Copy">
+    <keyboard-shortcut first-keystroke="ctrl k" second-keystroke="k" />
+  </action>
   <action id="$Redo">
     <keyboard-shortcut first-keystroke="shift ctrl z" />
     <keyboard-shortcut first-keystroke="shift alt minus" />
@@ -7,6 +10,7 @@
   <action id="ActivateErrorsInSolutionToolWindow">
     <keyboard-shortcut first-keystroke="meta 3" />
   </action>
+  <action id="ActivateFavoritesToolWindow" />
   <action id="ActivateProjectToolWindow">
     <keyboard-shortcut first-keystroke="meta 1" />
   </action>
@@ -35,6 +39,9 @@
   <action id="Console.TableResult.FindInGrid" />
   <action id="Console.TableResult.Submit" />
   <action id="DirDiffMenu.SynchronizeDiff.All" />
+  <action id="Editor Copy">
+    <keyboard-shortcut first-keystroke="ctrl k" second-keystroke="k" />
+  </action>
   <action id="Editor Redo">
     <keyboard-shortcut first-keystroke="ctrl period" />
   </action>
@@ -161,7 +168,9 @@
   <action id="Emacs+.KillLine">
     <keyboard-shortcut first-keystroke="ctrl semicolon" />
   </action>
-  <action id="Emacs+.KillRegion" />
+  <action id="Emacs+.KillRegion">
+    <keyboard-shortcut first-keystroke="ctrl k" second-keystroke="ctrl k" />
+  </action>
   <action id="Emacs+.KillWholeLine">
     <keyboard-shortcut first-keystroke="ctrl l" />
   </action>
