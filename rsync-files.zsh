@@ -1,12 +1,12 @@
-rsync -ti --progress /Users/cbocardo/.emacs.d/init.el /Users/cbocardo/ccb012100/emacs/.emacs.d/
-rsync -ti --progress /Users/cbocardo/.emacs.d/defuns.el /Users/cbocardo/ccb012100/emacs/.emacs.d/
-rsync -ti --progress /Users/cbocardo/.emacs.d/keybindings.el /Users/cbocardo/ccb012100/emacs/.emacs.d/
-rsync -ti --progress /Users/cbocardo/.emacs.d/macOS.el /Users/cbocardo/ccb012100/emacs/.emacs.d/
-rsync -ti --progress /Users/cbocardo/.emacs.d/packages.el /Users/cbocardo/ccb012100/emacs/.emacs.d/
-rsync -ti --progress /Users/cbocardo/.emacs.d/settings.el /Users/cbocardo/ccb012100/emacs/.emacs.d/
-rsync -ti --progress /Users/cbocardo/.zshrc /Users/cbocardo/ccb012100/mac-configs/
-rsync -ti --progress /Users/cbocardo/.zsh_aliases /Users/cbocardo/ccb012100/mac-configs/
-rsync -ti --progress /Users/cbocardo/.zsh_unalias /Users/cbocardo/ccb012100/mac-configs/
-rsync -ti --progress "/Users/cbocardo/Library/Application Support/Code/User/settings.json" /Users/cbocardo/ccb012100/vscode-settings/macos/
-rsync -ti --progress "/Users/cbocardo/Library/Application Support/Code/User/keybindings.json" /Users/cbocardo/ccb012100/vscode-settings/macos/
-rsync -ti --progress /Users/cbocardo/Library/VisualStudio/8.0/KeyBindings/Custom.mac-kb.xml /Users/cbocardo/ccb012100/mac-configs/visual-studio/
+rsync -ti --progress ~/.emacs.d/init.el ~/ccb012100/emacs/.emacs.d/
+rsync -ti --progress ~/.emacs.d/defuns.el ~/ccb012100/emacs/.emacs.d/
+rsync -ti --progress ~/.emacs.d/keybindings.el ~/ccb012100/emacs/.emacs.d/
+rsync -ti --progress ~/.emacs.d/macOS.el ~/ccb012100/emacs/.emacs.d/
+rsync -ti --progress ~/.emacs.d/packages.el ~/ccb012100/emacs/.emacs.d/
+rsync -ti --progress ~/.emacs.d/settings.el ~/ccb012100/emacs/.emacs.d/
+rsync -ti --progress ~/.zshrc ~/ccb012100/mac-configs/
+rsync -ti --progress ~/.zsh_aliases ~/ccb012100/mac-configs/
+rsync -ti --progress ~/.zsh_unalias ~/ccb012100/mac-configs/
+rsync -ti --progress ~/Library/Application\ Support/Code/User/settings.json ~/ccb012100/vscode-settings/macos/
+rsync -ti --progress ~/Library/Application\ Support/Code/User/keybindings.json ~/ccb012100/vscode-settings/macos/
+rsync -ti --progress ~/Library/VisualStudio/8.0/KeyBindings/Custom.mac-kb.xml ~/ccb012100/mac-configs/visual-studio/
