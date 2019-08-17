@@ -13,10 +13,15 @@
     <entry key="ide.tooltip.initialDelay.highlighter" value="0" />
     <entry key="ide.win.file.chooser.native" value="true" />
     <entry key="ide.tree.horizontal.default.autoscrolling" value="false" />
-    <entry key="ide.win.frame.decoration" value="true" />
     <entry key="search.everywhere.settings" value="true" />
     <entry key="ide.mac.allowDarkWindowDecorations" value="true" />
     <entry key="ide.balloon.shadow.size" value="0" />
     <entry key="rider.enable.designer.winForms" value="false" />
+    <entry key="performance.watcher.sampling.interval.ms" value="100" />
+    <entry key="performance.watcher.unresponsive.interval.ms" value="500" />
+    <entry key="ide.borderless.title.project.path" value="false" />
+    <entry key="ide.borderless.title.classpath" value="false" />
+    <entry key="ide.borderless.title.product" value="false" />
+    <entry key="ide.intellij.laf.enable.animation" value="true" />
   </component>
 </application>
