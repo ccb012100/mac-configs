@@ -1514,11 +1514,11 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSColorPanel</key>
-	<string>0 120 224 275 0 0 1920 1057 </string>
+	<string>0 118 224 275 0 0 1440 877 </string>
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>431 110 943 373 0 0 1440 877 </string>
 	<key>NSWindow Frame ProfilesPanel</key>
-	<string>205 457 735 382 0 0 1920 1057 </string>
+	<string>83 263 735 382 0 0 1920 1057 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>650 277 700 622 0 0 1920 1057 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
@@ -1528,7 +1528,7 @@
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>155 473 592 584 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>244 35 1305 1022 0 0 1920 1057 </string>
+	<string>1947 154 1859 903 1920 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>62 154 921 627 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
@@ -1791,6 +1791,8 @@
 			<string>41C3B77A-0408-4DFB-A91F-A692F66CA4A5</string>
 			<key>Horizontal Spacing</key>
 			<real>1</real>
+			<key>Icon</key>
+			<integer>1</integer>
 			<key>Idle Code</key>
 			<integer>0</integer>
 			<key>Jobs to Ignore</key>
@@ -2105,7 +2107,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>FiraMonoForPowerline-Regular 13</string>
+			<string>HackNerdFontComplete-Regular 12</string>
 			<key>Option Key Sends</key>
 			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
@@ -2351,6 +2353,8 @@
 			<array/>
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
+			<key>Title Components</key>
+			<integer>645</integer>
 			<key>Transparency</key>
 			<real>0.0</real>
 			<key>Unlimited Scrollback</key>
@@ -3111,18 +3115,39 @@
 		<string>3.3.0</string>
 		<string>3.3.1</string>
 	</array>
+	<key>NoSyncBFPFavorites</key>
+	<array>
+		<string>DejaVu Sans Mono for Powerline</string>
+		<string>Droid Sans Mono Awesome</string>
+		<string>Inconsolata Awesome</string>
+		<string>Inconsolata</string>
+		<string>Fira Code</string>
+		<string>Fira Mono for Powerline</string>
+		<string>Inconsolata for Powerline</string>
+		<string>SourceCodePro+Powerline+Awesome Regular</string>
+		<string>Ubuntu Mono derivative Powerline</string>
+		<string>Ubuntu Mono</string>
+		<string>Hack Nerd Font</string>
+	</array>
+	<key>NoSyncBFPRecents</key>
+	<array>
+		<string>Hack Nerd Font</string>
+		<string>Ubuntu Mono derivative Powerline</string>
+		<string>SourceCodePro+Powerline+Awesome Regular</string>
+		<string>Inconsolata for Powerline</string>
+	</array>
 	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
 	<true/>
 	<key>NoSyncDoNotWarnBeforePastingOneLineEndingInNewlineAtShellPrompt</key>
-	<false/>
+	<true/>
 	<key>NoSyncDoNotWarnBeforePastingOneLineEndingInNewlineAtShellPrompt_selection</key>
-	<integer>0</integer>
+	<integer>1</integer>
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{0, 0}, {1920, 1080}}</string>
+		<string>{{1920, 0}, {1920, 1080}}</string>
 		<key>topLeft</key>
-		<string>{961, 930}</string>
+		<string>{2575, 1057}</string>
 	</dict>
 	<key>NoSyncHaveUsedCopyMode</key>
 	<true/>
@@ -3133,9 +3158,9 @@
 	<key>NoSyncInstallationId</key>
 	<string>54E2DAF0-AE3D-42AC-88B9-71B3748364CE</string>
 	<key>NoSyncLastTipTime</key>
-	<real>586999190.66393495</real>
+	<real>587648035.29116404</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>4</integer>
+	<integer>9</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -3878,6 +3903,8 @@
 	</dict>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>580841408.50860202</real>
+	<key>NoSyncTipsDisabled</key>
+	<true/>
 	<key>NoSyncTipsToNotShow</key>
 	<array>
 		<string>000</string>
@@ -3986,7 +4013,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-08-09T14:40:57Z</date>
+	<date>2019-08-19T14:09:42Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
