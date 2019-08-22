@@ -4,7 +4,11 @@ export ALTERNATE_EDITOR=""
 export EDITOR="emacsclient -t"                  # $EDITOR opens in terminal
 export VISUAL="emacsclient -c -a emacs"         # $VISUAL opens in GUI mode
 
+POWERLEVEL9K_MODE='nerdfont-complete' # has to be set before ZSH_THEME
 ZSH_THEME="powerlevel9k/powerlevel9k"
+
+POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+POWERLEVEL9K_DISABLE_RPROMPT=true
 
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -23,6 +27,8 @@ setopt cdable_vars               	# directory aliases for cd command
 . ~/.zsh_aliases					# custom aliases
 . ~/.zsh_unalias					# remove aliases set by zsh
 . ~/.zsh_machine-specific-aliases	# aliases for using on a specific machine
+source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-#new-frame() { emacsclient -e "(new-frame)" }	# open new emacs-frame
+new-frame() { emacsclient -e "(new-frame)" }	# open new emacs-frame
 bindkey '^ ' autosuggest-accept		# for zsh-autosuggestions: Ctrl+SPACE to accept
+if [ -n "$RANGER_LEVEL" ]; then export PS1="[ranger]$PS1"; fi # show when running in a shell spawned by ranger
