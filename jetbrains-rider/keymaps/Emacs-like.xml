@@ -161,9 +161,11 @@
     <keyboard-shortcut first-keystroke="meta y" />
   </action>
   <action id="Emacs+.ISYankNextWord" />
+  <action id="Emacs+.ISearchBackward" />
   <action id="Emacs+.ISearchBackwardRegexp">
     <keyboard-shortcut first-keystroke="ctrl meta r" />
   </action>
+  <action id="Emacs+.ISearchForward" />
   <action id="Emacs+.ISearchForwardRegexp">
     <keyboard-shortcut first-keystroke="ctrl meta s" />
   </action>
@@ -222,6 +224,14 @@
   <action id="FileChooser.NewFolder" />
   <action id="FindInPath">
     <keyboard-shortcut first-keystroke="shift meta f" />
+  </action>
+  <action id="FindNext">
+    <keyboard-shortcut first-keystroke="f3" />
+    <keyboard-shortcut first-keystroke="alt s" />
+    <keyboard-shortcut first-keystroke="ctrl s" />
+  </action>
+  <action id="FindPrevious">
+    <keyboard-shortcut first-keystroke="ctrl r" />
   </action>
   <action id="FindUsages">
     <keyboard-shortcut first-keystroke="meta f7" />
@@ -297,6 +307,9 @@
   <action id="RiderUnitTestNewSessionAction" />
   <action id="RiderUnitTestRepeatPreviousRunAction" />
   <action id="RiderUnitTestRunContextAction" />
+  <action id="RiderUnitTestRunContextTwAction">
+    <keyboard-shortcut first-keystroke="shift enter" />
+  </action>
   <action id="RiderUnitTestRunContextUntilFailAction" />
   <action id="RiderUnitTestRunCurrentSessionAction" />
   <action id="RiderUnitTestRunSolutionAction" />

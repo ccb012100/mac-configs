@@ -18,8 +18,13 @@ source $ZSH/oh-my-zsh.sh
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-function cl { cd "$@" && ls -F } 	# cd then ls
-function cla { cd "$@" && ls -a } 	# cd then ls -a
+# functions to cd then ls in one step
+function cls { cd "$@" && ls }
+function cla { cd "$@" && la }
+function cll { cd "$@" && ll }
+function clal { cd "$@" && lal }
+function clla { cd "$@" && lla }
+
 setopt cdable_vars               	# directory aliases for cd command
 
 . ~/tools/z/z.sh					# z -jump around [https://github.com/rupa/z]
