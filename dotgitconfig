@@ -2,6 +2,7 @@
 	excludesfile = /Users/cbocardo/.gitignore_global
 	autocrlf = input
 	pager = diff-so-fancy | less --tabs=4 -RFX
+    editor = emacs
 [user]
 	name = Christopher Bocardo
 	email = email@mail.com
@@ -32,6 +33,8 @@
     c = checkout
     l = log --graph --pretty='format:%Cgreen %h %Cred %cn %Cblue %ci %Cgreen %s %Creset'
     s = status
+    cam = commit -am
+    acm = commit -am
 [merge]
 	tool = diffmerge
 [mergetool "diffmerge"]
