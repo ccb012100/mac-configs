@@ -2335,7 +2335,7 @@
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>155 473 592 584 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 32 1919 1025 0 0 1920 1057 </string>
+	<string>1 31 718 846 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>62 154 921 627 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
@@ -2588,7 +2588,7 @@
 				<real>1</real>
 			</dict>
 			<key>Blinking Cursor</key>
-			<true/>
+			<false/>
 			<key>Blur</key>
 			<false/>
 			<key>Bold Color</key>
@@ -4044,9 +4044,9 @@
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{1920, 0}, {1920, 1080}}</string>
+		<string>{{0, 0}, {1440, 900}}</string>
 		<key>topLeft</key>
-		<string>{2208, 770}</string>
+		<string>{233, 877}</string>
 	</dict>
 	<key>NoSyncHaveUsedCopyMode</key>
 	<true/>
@@ -4912,7 +4912,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-08-27T17:27:01Z</date>
+	<date>2019-08-31T01:51:24Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>

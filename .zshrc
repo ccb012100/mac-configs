@@ -20,10 +20,10 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 # functions to cd then ls in one step
 function cls { cd "$@" && ls }
-function cla { cd "$@" && la }
-function cll { cd "$@" && ll }
-function clal { cd "$@" && lal }
-function clla { cd "$@" && lla }
+function cla { cd "$@" && ls -a }
+function cll { cd "$@" && ls -l }
+function clal { cd "$@" && ls -lal }
+function clla { cd "$@" && ls -lla }
 
 setopt cdable_vars               	# directory aliases for cd command
 

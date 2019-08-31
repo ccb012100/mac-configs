@@ -1,23 +1,24 @@
 # zsh aliases
 
-alias ls='exa'						# use exa as ls replacement
+alias ls='exa'							# use exa as ls replacement
 alias la='ls -a'
 alias ll='ls -l'
 alias lal='ls -al'
 alias lla='ls -la'
 
-alias cls='clear'					# clear screen
+alias cls='clear'						# clear screen
 
-alias cat='bat'						# use bat as cat replacement
-alias emacs='emacsclient -n'		# use emacsclient
+alias cat='bat'							# use bat as cat replacement
+alias emacs='emacsclient -n'			# use emacsclient
 alias g='git'
-alias jq='jq -C'					# colorize json
-alias nano='nano -Palmic -J 80'
+alias jq='jq -C'						# colorize json
+alias nano='nano -AEOSWPalmicus -J 80'
+alias nanorw='nano -v'					# open nano in readonly mode
 alias tree='exa --tree --level=2'
 
-alias dotzsh='nano ~/.zshrc'		# edit zsh config
-alias srczsh='source ~/.zshrc'		# reload zsh config
-alias virc='vim ~/.vim/vimrc'		# edit vimrc file
+alias dotzsh='nano ~/.zshrc'			# edit zsh config
+alias srczsh='source ~/.zshrc'			# reload zsh config
+alias virc='vim ~/.vim/vimrc'			# edit vimrc file
 
 # open Slack in dev mode
 alias slack='export SLACK_DEVELOPER_MENU=true; open -a /Applications/Slack.app'
