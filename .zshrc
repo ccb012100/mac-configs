@@ -1,14 +1,17 @@
 export PATH=~/.dotnet/tools:~/tools:$PATH
-export ZSH="/Users/cbocardo/.oh-my-zsh" # Path to oh-my-zsh installation
+export ZSH="/Users/cbocardo/.oh-my-zsh"         # Path to oh-my-zsh installation
 export ALTERNATE_EDITOR=""
-export EDITOR="emacsclient -t"                  # $EDITOR opens in terminal
-export VISUAL="emacsclient -c -a emacs"         # $VISUAL opens in GUI mode
+export EDITOR="emacsclient -t"              # $EDITOR opens in terminal
+export VISUAL="emacsclient -c -a emacs"     # $VISUAL opens in GUI mode
+export DEFAULT_USER=cbocardo
 
 POWERLEVEL9K_MODE='nerdfont-complete' # has to be set before ZSH_THEME
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 POWERLEVEL9K_DISABLE_RPROMPT=true
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context history time dir vcs)
+POWERLEVEL9K_TIME_FORMAT="%D{%r}"
 
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -25,14 +28,14 @@ function cll { cd "$@" && ls -l }
 function clal { cd "$@" && ls -lal }
 function clla { cd "$@" && ls -lla }
 
-setopt cdable_vars               	# directory aliases for cd command
+setopt cdable_vars                  # directory aliases for cd command
 
-. ~/tools/z/z.sh					# z -jump around [https://github.com/rupa/z]
+. ~/tools/z/z.sh                    # z -jump around [https://github.com/rupa/z]
+. ~/.zsh-aliases                    # custom aliases
+. ~/.zsh-unalias                    # remove aliases set by zsh
+. ~/.zsh-machine-specific-aliases   # aliases for using on a specific machine
 
-. ~/.zsh_aliases					# custom aliases
-. ~/.zsh_unalias					# remove aliases set by zsh
-. ~/.zsh_machine-specific-aliases	# aliases for using on a specific machine
-source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/tools/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 new-frame() { emacsclient -e "(new-frame)" }	# open new emacs-frame
 bindkey '^ ' autosuggest-accept		# for zsh-autosuggestions: Ctrl+SPACE to accept

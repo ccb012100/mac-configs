@@ -1,19 +1,3 @@
-""
-"" vim-plug
-"" https://github.com/junegunn/vim-plug
-"" run :PlugUpdate to update vim-plug
-""
-call plug#begin('~/.vim/plugged')
-Plug 'luochen1990/rainbow' " Rainbow Parentheses Improved
-Plug 'morhetz/gruvbox'
-"Plug 'nathanaelkane/vim-indent-guides' TODO: get this plugin working
-Plug 'NLKNguyen/papercolor-theme'
-call plug#end()
-" vim-plug sets `filetype plugin indent on` and `syntax enable`
-" syntax on " syntax highlighting
-" filetype indent on
-
-set autoread " reload file if it's changed outside vim
 set expandtab " pressing <TAB> inserts spaces
 set hlsearch " highlight matches
 set incsearch " search as characters are entered
@@ -32,8 +16,6 @@ set termguicolors " true color terminal
 set wildmenu " visual autocomplete for command menu
 set ttimeoutlen=50 " switch quick between modes
 
-let g:rainbow_active = 1 " turn on rainbow brackets
-
 ""
 "" create backup files and save to /tmp
 ""
@@ -47,8 +29,6 @@ set writebackup
 " Only use relative line numbers in Normal Mode
 :autocmd InsertEnter * set cursorline cursorcolumn norelativenumber
 :autocmd InsertLeave * set nocursorline nocursorcolumn relativenumber
-
-color PaperColor " set theme
 
 hi Cursor ctermbg=black " current line bg=black in Normal mode
 hi Normal ctermbg=darkgray " current line bg=darkgray in Insert moden
