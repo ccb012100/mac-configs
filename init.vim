@@ -37,6 +37,7 @@ set lazyredraw
 set list             " show whitespace
 set nu rnu           " toggle hybrid line numbers (`number relativenumber`)
 set ruler            " displays cursor position
+set shiftwidth=4     " indentation setting
 set showcmd          " show last command in bottom bar
 set showmatch        " highlight matching brackets/parens
 set softtabstop=4
