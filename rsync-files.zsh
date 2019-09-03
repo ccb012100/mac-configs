@@ -25,4 +25,7 @@ rsync -ti --progress ~/Library/Application\ Support/Code/User/keybindings.json \
 rsync -ti --progress ~/Library/VisualStudio/8.0/KeyBindings/Custom.mac-kb.xml \
       ~/ccb012100/mac-configs/visual-studio/
 
+# Alacritty
+rsync -ti --progress ~/.config/alacritty/alacritty.yml ~/ccb012100/mac-configs/
+
 # TODO: add for JetBrains Rider - copy to git folder
