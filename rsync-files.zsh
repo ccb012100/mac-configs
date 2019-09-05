@@ -28,4 +28,10 @@ rsync -ti --progress ~/Library/VisualStudio/8.0/KeyBindings/Custom.mac-kb.xml \
 # Alacritty
 rsync -ti --progress ~/.config/alacritty/alacritty.yml ~/ccb012100/mac-configs/
 
+# tmux
+rsync -ti --progress ~/.tmux.conf ~/ccb012100/linux-configs/
+
+# bat
+rsync -ti --progress ~/.config/bat/config/bat.conf ~/ccb012100/linux-configs/
+
 # TODO: add for JetBrains Rider - copy to git folder
