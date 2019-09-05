@@ -17,6 +17,9 @@ alias gs='git-status'
 alias tree='exa --tree --level=2'
 alias nano='nano -AEOSWPalmicus -J 80'
 
+# use SICP-compatible REPL
+alias sicp='racket -l sicp --repl'
+
 # use Neovim instad of Vim
 alias v='nvim'
 alias vi='nvim'
