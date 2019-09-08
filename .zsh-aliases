@@ -7,11 +7,11 @@ alias ll='ls -l'
 alias lal='ls -al'
 alias lla='ls -la'
 
-alias cat='bat'         # use bat as cat replacement
-alias cls='clear'       # clear screen
-alias jq='jq -C'        # colorize json
-alias nanorw='nano -v'  # open nano in readonly mode
-
+alias cat='bat'             # use bat as cat replacement
+alias cls='clear'           # clear screen
+alias jq='jq -C'            # colorize json
+alias nanorw='nano -v'      # open nano in readonly mode
+alias hist='history -25'    # show last 25 entries only
 alias g='git'
 alias gs='git-status'
 alias tree='exa --tree --level=2'

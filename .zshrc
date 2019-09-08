@@ -11,7 +11,6 @@ export DEFAULT_USER=cbocardo
 
 POWERLEVEL9K_MODE='nerdfont-complete'       # has to be set before ZSH_THEME
 ZSH_THEME="powerlevel9k/powerlevel9k"
-
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 POWERLEVEL9K_DISABLE_RPROMPT=true
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context history time dir vcs)
