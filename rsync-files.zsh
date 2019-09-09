@@ -38,3 +38,7 @@ rsync -ti --progress ~/.config/bat/config/bat.conf ~/ccb012100/linux-configs/
 
 # ranger
 rsync -ti --progress ~/.config/ranger/rc.conf ~/ccb012100/mac-configs/
+
+# Spectacle
+rsync -ti --progress ~/Library/Application\ Support/Spectacle/Shortcuts.json \
+      ~/ccb012100/mac-configs/Users/cbocardo/Library/Application\ Support/Spectacle/
