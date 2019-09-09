@@ -35,3 +35,6 @@ rsync -ti --progress ~/.tmux.conf ~/ccb012100/linux-configs/
 rsync -ti --progress ~/.config/bat/config/bat.conf ~/ccb012100/linux-configs/
 
 # TODO: add for JetBrains Rider - copy to git folder
+
+# ranger
+rsync -ti --progress ~/.config/ranger/rc.conf ~/ccb012100/mac-configs/
