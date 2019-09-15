@@ -12,6 +12,8 @@ alias cls='clear'           # clear screen
 alias jq='jq -C'            # colorize json
 alias nanorw='nano -v'      # open nano in readonly mode
 alias hist='history -25'    # show last 25 entries only
+alias pshell='pwsh'
+alias powershell='pwsh'
 alias g='git'
 alias gs='git-status'
 alias tree='exa --tree --level=2'

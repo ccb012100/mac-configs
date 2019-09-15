@@ -29,6 +29,7 @@
     <keyboard-shortcut first-keystroke="home" />
   </action>
   <action id="ChangesView.GroupBy.Directory" />
+  <action id="ChangesView.SetDefault" />
   <action id="CodeCompletion">
     <keyboard-shortcut first-keystroke="meta slash" />
   </action>
@@ -67,6 +68,10 @@
     <keyboard-shortcut first-keystroke="shift ctrl meta u" />
   </action>
   <action id="EditorDuplicate" />
+  <action id="EditorEscape">
+    <keyboard-shortcut first-keystroke="escape" second-keystroke="escape" />
+    <keyboard-shortcut first-keystroke="ctrl open_bracket" />
+  </action>
   <action id="EditorJoinLines">
     <keyboard-shortcut first-keystroke="ctrl j" />
   </action>
@@ -103,6 +108,9 @@
   <action id="EditorTextStart">
     <keyboard-shortcut first-keystroke="shift meta comma" />
     <keyboard-shortcut first-keystroke="meta less" />
+  </action>
+  <action id="EditorToggleStickySelection">
+    <keyboard-shortcut first-keystroke="shift ctrl 2" />
   </action>
   <action id="Emacs+.AppendNextKill" />
   <action id="Emacs+.BackToIndentation" />
@@ -298,6 +306,9 @@
     <keyboard-shortcut first-keystroke="shift ctrl alt t" />
     <keyboard-shortcut first-keystroke="ctrl k" second-keystroke="ctrl r" />
   </action>
+  <action id="ReformatCode">
+    <keyboard-shortcut first-keystroke="ctrl k" second-keystroke="ctrl d" />
+  </action>
   <action id="RiderTypeHierarchy.BaseOnThisType" />
   <action id="RiderUnitTestAppendTestsAction" />
   <action id="RiderUnitTestCoverSolutionAction" />
@@ -330,7 +341,7 @@
     <keyboard-shortcut first-keystroke="meta p" />
   </action>
   <action id="SearchEverywhere">
-    <keyboard-shortcut first-keystroke="ctrl k" second-keystroke="f" />
+    <keyboard-shortcut first-keystroke="ctrl space" />
   </action>
   <action id="ShowIntentionActions">
     <keyboard-shortcut first-keystroke="alt enter" />

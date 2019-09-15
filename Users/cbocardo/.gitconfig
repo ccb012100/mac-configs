@@ -31,6 +31,7 @@
     a = add .
     b = branch
     c = checkout
+    d = diff
     l = log --graph --pretty='format:%Cgreen %h %Cred %cn %Cblue %ci %Cgreen %s %Creset'
     s = status
     cam = commit -am

@@ -1,6 +1,9 @@
 "" Config for Neovim
 "" place in `~/.config/nvim/init.vim`
 
+set encoding=utf-8
+scriptencoding utf-8
+
 "" Clipboard functionality (paste from system)
 vnoremap <leader>y "+y
 nnoremap <leader>y "+y
@@ -34,6 +37,10 @@ set hlsearch         " highlight matches
 set incsearch        " search as characters are entered
 set laststatus=2     " always show statusline
 set lazyredraw
+"" whitespace glyphs
+"set listchars=eol:↵,tab:→,trail:~,extends:>,precedes:<,space:·
+set listchars=eol:↵,tab:➝\ ,trail:~,extends:>,precedes:<,space:·
+
 set list             " show whitespace
 set nu rnu           " toggle hybrid line numbers (`number relativenumber`)
 set ruler            " displays cursor position
@@ -52,7 +59,6 @@ let g:rainbow_active = 1    " turn on rainbow brackets
 "" create backup files and save to /tmp
 ""
 set backup
-set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set backupskip=/tmp/*,/private/tmp/*
 set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set writebackup
