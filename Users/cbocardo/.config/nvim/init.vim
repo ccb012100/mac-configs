@@ -58,10 +58,9 @@ let g:rainbow_active = 1    " turn on rainbow brackets
 ""
 "" create backup files and save to /tmp
 ""
-set backup
-set backupskip=/tmp/*,/private/tmp/*
-set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
-set writebackup
+set backupdir=.backup/,~/.backup/,/tmp//
+set directory=.swp/,~/.swp/,/tmp//
+set undodir=.undo/,~/.undo/,/tmp//
 
 "" Show cursorline and columnline in Insert Mode
 "" Only use relative line numbers in Normal Mode
