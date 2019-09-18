@@ -10,17 +10,12 @@ alias lla='ls -la'
 alias cat='bat'             # use bat as cat replacement
 alias cls='clear'           # clear screen
 alias jq='jq -C'            # colorize json
-alias nanorw='nano -v'      # open nano in readonly mode
 alias hist='history -25'    # show last 25 entries only
 alias pshell='pwsh'
 alias powershell='pwsh'
 alias g='git'
 alias gs='git-status'
 alias tree='exa --tree --level=2'
-alias nano='nano -AEOSWPalmicus -J 80'
-
-# use SICP-compatible REPL
-alias sicp='racket -l sicp --repl'
 
 # use Neovim instad of Vim
 alias v='nvim'
@@ -31,7 +26,3 @@ alias vimdiff='nvim -d'
 # emacs
 alias e='emacs'
 alias emacs='emacsclient -n'                    # use emacsclient
-alias zshrc='emacs ~/.zshrc'                    # edit zsh config in emacs
-alias vimrc='emacs ~/.vim/vimrc'                # edit vim config in emacs
-alias nvimrc='emacs ~/.config/nvim/init.vim'    # edit nvim config in emacs
-

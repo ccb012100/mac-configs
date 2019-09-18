@@ -2,8 +2,6 @@
 # located in ~/.zshrc
 # for setting Homebrew version to run as default shell, see:
 # https://rick.cogley.info/post/use-homebrew-zsh-instead-of-the-osx-default/
-
-export PATH=/Applications/Racket\ v7.4/bin:$PATH
 export PATH=~/.dotnet/tools:~/tools:$PATH
 export ZSH="/Users/cbocardo/.oh-my-zsh"     # Path to oh-my-zsh installation
 export ALTERNATE_EDITOR=""
