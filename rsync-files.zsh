@@ -1,6 +1,7 @@
 # Emacs
 rsync -ti --progress ~/.emacs.d/init.el ~/ccb012100/emacs/.emacs.d/
 rsync -ti --progress ~/.emacs.d/defuns.el ~/ccb012100/emacs/.emacs.d/
+rsync -ti --progress ~/.emacs.d/clojure.el ~/ccb012100/emacs/.emacs.d/
 rsync -ti --progress ~/.emacs.d/keybindings.el ~/ccb012100/emacs/.emacs.d/
 rsync -ti --progress ~/.emacs.d/macOS.el ~/ccb012100/emacs/.emacs.d/
 rsync -ti --progress ~/.emacs.d/packages.el ~/ccb012100/emacs/.emacs.d/
