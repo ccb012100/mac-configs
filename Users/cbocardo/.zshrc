@@ -18,7 +18,7 @@ POWERLEVEL9K_TIME_FORMAT="%D{%r}"
 
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-plugins=(git zsh-syntax-highlighting zsh-autosuggestions fzf z zsh-completions)
+plugins=(git zsh-autosuggestions fzf z zsh-completions)
 autoload -U compinit && compinit # zsh-completions
 
 source $ZSH/oh-my-zsh.sh            # run `upgrade_oh_my_zsh` to update
@@ -47,3 +47,5 @@ bindkey '^o' autosuggest-accept # for zsh-autosuggestions: Ctrl+o to accept
 
 # show when running in a shell that was spawned by ranger
 if [ -n "$RANGER_LEVEL" ]; then export PS1="[ranger]$PS1"; fi
+
+source ~/tools/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
