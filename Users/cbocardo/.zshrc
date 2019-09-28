@@ -9,7 +9,8 @@ export EDITOR="nvim"              # $EDITOR opens in terminal
 export VISUAL="nvim"     # $VISUAL opens in GUI mode
 export DEFAULT_USER=cbocardo
 
-ZSH_THEME="avit"
+ZSH_THEME=""
+source ~/tools/powerlevel10k/powerlevel10k.zsh-theme
 
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -44,3 +45,6 @@ bindkey '^o' autosuggest-accept # for zsh-autosuggestions: Ctrl+o to accept
 if [ -n "$RANGER_LEVEL" ]; then export PS1="[ranger]$PS1"; fi
 
 source ~/tools/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
