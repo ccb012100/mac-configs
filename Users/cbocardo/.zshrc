@@ -5,16 +5,11 @@
 export PATH=~/.dotnet/tools:~/tools:$PATH
 export ZSH="/Users/cbocardo/.oh-my-zsh"     # Path to oh-my-zsh installation
 export ALTERNATE_EDITOR=""
-export EDITOR="emacsclient -t"              # $EDITOR opens in terminal
-export VISUAL="emacsclient -c -a emacs"     # $VISUAL opens in GUI mode
+export EDITOR="nvim"              # $EDITOR opens in terminal
+export VISUAL="nvim"     # $VISUAL opens in GUI mode
 export DEFAULT_USER=cbocardo
 
-POWERLEVEL9K_MODE='nerdfont-complete'       # has to be set before ZSH_THEME
-ZSH_THEME="powerlevel9k/powerlevel9k"
-POWERLEVEL9K_PROMPT_ON_NEWLINE=true
-POWERLEVEL9K_DISABLE_RPROMPT=true
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context history time dir vcs)
-POWERLEVEL9K_TIME_FORMAT="%D{%r}"
+ZSH_THEME="avit"
 
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
