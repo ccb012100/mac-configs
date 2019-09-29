@@ -5096,6 +5096,15 @@
 	</dict>
 	<key>GlobalTouchBarMap</key>
 	<dict>
+		<key>touchbar:AE4DE486-5326-42BE-A238-615DF90FBEF0</key>
+		<dict>
+			<key>Action</key>
+			<integer>2</integer>
+			<key>Label</key>
+			<string>Previout Tab</string>
+			<key>Text</key>
+			<string></string>
+		</dict>
 		<key>touchbar:B147D8A2-82E7-49C2-9323-FE6EB48E905B</key>
 		<dict>
 			<key>Action</key>
@@ -5105,9 +5114,18 @@
 			<key>Text</key>
 			<string>41C3B77A-0408-4DFB-A91F-A692F66CA4A5</string>
 		</dict>
+		<key>touchbar:E54A960D-20FE-461A-93B7-CCB958E4662B</key>
+		<dict>
+			<key>Action</key>
+			<integer>0</integer>
+			<key>Label</key>
+			<string>Next Tab</string>
+			<key>Text</key>
+			<string></string>
+		</dict>
 	</dict>
 	<key>HapticFeedbackForEsc</key>
-	<false/>
+	<true/>
 	<key>HideTab</key>
 	<true/>
 	<key>HotkeyMigratedFromSingleToMulti</key>
@@ -5397,16 +5415,12 @@
 			<real>0.0</real>
 			<key>Cursor Color</key>
 			<dict>
-				<key>Alpha Component</key>
-				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.38980067508701827</real>
-				<key>Color Space</key>
-				<string>sRGB</string>
+				<real>0.73333334922790527</real>
 				<key>Green Component</key>
-				<real>0.013074049412352906</real>
+				<real>0.73333334922790527</real>
 				<key>Red Component</key>
-				<real>0.78105825185775757</real>
+				<real>0.73333334922790527</real>
 			</dict>
 			<key>Cursor Guide Color</key>
 			<dict>
@@ -5431,7 +5445,7 @@
 				<real>1</real>
 			</dict>
 			<key>Cursor Type</key>
-			<integer>1</integer>
+			<integer>2</integer>
 			<key>Custom Command</key>
 			<string>No</string>
 			<key>Custom Directory</key>
@@ -6816,7 +6830,7 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1440, 900}}</string>
 		<key>topLeft</key>
-		<string>{102, 867}</string>
+		<string>{366, 877}</string>
 	</dict>
 	<key>NoSyncHaveUsedCopyMode</key>
 	<true/>
@@ -6829,7 +6843,7 @@
 	<key>NoSyncLastTipTime</key>
 	<real>587648035.29116404</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>18</integer>
+	<integer>21</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -7683,6 +7697,8 @@
 	<false/>
 	<key>QuitWhenAllWindowsClosed</key>
 	<false/>
+	<key>RightCommand</key>
+	<integer>8</integer>
 	<key>SUAutomaticallyUpdate</key>
 	<true/>
 	<key>SUEnableAutomaticChecks</key>
@@ -7694,7 +7710,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-09-25T02:11:29Z</date>
+	<date>2019-09-29T17:15:06Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -7706,7 +7722,7 @@
 	<key>SmartPlacement</key>
 	<true/>
 	<key>SoundForEsc</key>
-	<false/>
+	<true/>
 	<key>SplitPaneDimmingAmount</key>
 	<real>0.14766376201923076</real>
 	<key>StatusBarPosition</key>
@@ -7714,7 +7730,9 @@
 	<key>StretchTabsToFillBar</key>
 	<false/>
 	<key>SwitchTabModifier</key>
-	<integer>4</integer>
+	<integer>9</integer>
+	<key>SwitchWindowModifier</key>
+	<integer>9</integer>
 	<key>TabStyleWithAutomaticOption</key>
 	<integer>5</integer>
 	<key>ThreeFingerEmulates</key>
