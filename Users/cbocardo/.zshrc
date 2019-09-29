@@ -19,6 +19,8 @@ autoload -U compinit && compinit # zsh-completions
 
 source $ZSH/oh-my-zsh.sh            # run `upgrade_oh_my_zsh` to update
 setopt cdable_vars                  # directory aliases for cd command
+
+# zsh-syntax-hightlighting works better when sourced outside oh-my-zsh
 source ~/tools/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # iTerm2 shell integration
@@ -39,12 +41,10 @@ function clla { cd "$@" && ls -lla }
 
 function new-frame { emacsclient -e "(new-frame)" } # open new emacs-frame
 
-bindkey '^o' autosuggest-accept # for zsh-autosuggestions: Ctrl+o to accept
+bindkey '^ ' autosuggest-accept # for zsh-autosuggestions: C-[Space] to accept
 
 # show when running in a shell that was spawned by ranger
 if [ -n "$RANGER_LEVEL" ]; then export PS1="[ranger]$PS1"; fi
-
-source ~/tools/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh

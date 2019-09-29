@@ -294,7 +294,7 @@ debug:
 #   - AppKeypad
 key_bindings:
   # (macOS only)
-  - { key: F,        mods: Command|Control, action: ToggleFullscreen         }
+  # - { key: F,        mods: Command|Control, action: ToggleFullscreen         }
   - { key: Paste,                   action: Paste                            }
   - { key: Copy,                    action: Copy                             }
   - { key: L,        mods: Control, action: ClearLogNotice                   }
