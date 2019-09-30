@@ -1,6 +1,7 @@
 # zsh aliases
 
 # ls
+alias l='exa'
 alias ls='exa'      # use exa as ls replacement
 alias la='ls -a'
 alias ll='ls -l'
