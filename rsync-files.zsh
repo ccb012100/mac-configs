@@ -1,11 +1,20 @@
 # Emacs
-rsync -ti --progress ~/.emacs.d/init.el ~/ccb012100/emacs/.emacs.d/
 rsync -ti --progress ~/.emacs.d/defuns.el ~/ccb012100/emacs/.emacs.d/
-rsync -ti --progress ~/.emacs.d/clojure.el ~/ccb012100/emacs/.emacs.d/
+rsync -ti --progress ~/.emacs.d/clojure-packages.el ~/ccb012100/emacs/.emacs.d/
+rsync -ti --progress ~/.emacs.d/helm-packages.el ~/ccb012100/emacs/.emacs.d/
+rsync -ti --progress ~/.emacs.d/init.el ~/ccb012100/emacs/.emacs.d/
 rsync -ti --progress ~/.emacs.d/keybindings.el ~/ccb012100/emacs/.emacs.d/
 rsync -ti --progress ~/.emacs.d/macOS.el ~/ccb012100/emacs/.emacs.d/
 rsync -ti --progress ~/.emacs.d/packages.el ~/ccb012100/emacs/.emacs.d/
+rsync -ti --progress ~/.emacs.d/packages-init.el ~/ccb012100/emacs/.emacs.d/
 rsync -ti --progress ~/.emacs.d/settings.el ~/ccb012100/emacs/.emacs.d/
+rsync -ti --progress ~/.emacs.d/theme-packages.el ~/ccb012100/emacs/.emacs.d/
+
+rsync -ti --progress ~/.emacs.d/custom-fn-keybindings.el \
+      ~/ccb012100/emacs/.emacs.d/
+
+rsync -ti --progress ~/.emacs.d/windmove-keybindings.el \
+      ~/ccb012100/emacs/.emacs.d/
 
 # zsh
 rsync -ti --progress ~/.zshrc ~/ccb012100/mac-configs/Users/cbocardo/
