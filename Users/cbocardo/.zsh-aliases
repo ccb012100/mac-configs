@@ -2,7 +2,7 @@
 
 # ls
 alias l='exa'
-alias ls='exa'      # use exa as ls replacement
+alias ls='exa'              # use exa as ls replacement
 alias la='ls -a'
 alias ll='ls -l'
 alias lal='ls -al'
@@ -26,4 +26,8 @@ alias vimdiff='nvim -d'
 
 # emacs
 alias e='emacs'
-alias emacs='emacsclient -n'                    # use emacsclient
+alias emacs='emacsclient -n'# use emacsclient
+
+if [ '$TERM' = 'alacritty' ]; then
+    alias tmux='TERM=xterm-256color tmux'
+fi
