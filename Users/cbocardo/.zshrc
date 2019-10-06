@@ -19,6 +19,8 @@ setopt hist_verify
 setopt inc_append_history
 setopt share_history                # share command history data
 
+setopt noclobber                    # don't overwrite existing files
+setopt ignoreeof                    # Ctrl-D won't kill the session
 setopt auto_cd
 setopt correctall                   # spelling correction for commands
 setopt cdable_vars                  # directory aliases for cd command
@@ -52,3 +54,5 @@ source ~/tools/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 bindkey -e
 bindkey '^ ' autosuggest-accept # for zsh-autosuggestions: C-[Space] to accept
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
