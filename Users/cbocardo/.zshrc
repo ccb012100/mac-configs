@@ -9,30 +9,37 @@ export VISUAL="nvim"                # $VISUAL opens in GUI mode
 export DEFAULT_USER=cbocardo
 
 HISTFILE=~/.zsh_history
+HISTSIZE=50000
 SAVEHIST=10000
-setopt HIST_IGNORE_SPACE
+
 setopt extended_history
 setopt hist_expire_dups_first
-setopt hist_ignore_dups             # ignore duplication command history list
+setopt hist_ignore_dups
 setopt hist_ignore_space
 setopt hist_verify
 setopt inc_append_history
-setopt share_history                # share command history data
+setopt share_history
+setopt hist_reduce_blanks
+setopt hist_find_no_dups
 
 setopt noclobber                    # don't overwrite existing files
 setopt ignoreeof                    # Ctrl-D won't kill the session
 setopt auto_cd
 setopt correctall                   # spelling correction for commands
 setopt cdable_vars                  # directory aliases for cd command
+setopt complete_in_word             # Allow completion from within a word/phrase
+
 autoload -U compinit && compinit    # zsh-completions
 
 # iTerm2 shell integration
 test -e "${HOME}/.iterm2_shell_integration.zsh" && \
     source "${HOME}/.iterm2_shell_integration.zsh"
 
-source ~/tools/z/z.sh                    # z -jump around [https://github.com/rupa/z]
+# z -jump around [https://github.com/rupa/z]
+source ~/tools/z/z.sh
 source ~/.zsh-aliases                    # custom aliases
-source ~/.zsh-machine-specific-aliases   # aliases for using on a specific machine
+# aliases specific to the machine zsh is running on
+source ~/.zsh-machine-specific-aliases
 
 # functions to cd then ls in one step
 function cls { cd "$@" && ls }
@@ -53,6 +60,6 @@ source ~/tools/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/tools/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 bindkey -e
-bindkey '^ ' autosuggest-accept # for zsh-autosuggestions: C-[Space] to accept
+bindkey '^y' autosuggest-accept # for zsh-autosuggestions: C-[Space] to accept
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
