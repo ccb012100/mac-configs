@@ -1,0 +1,8 @@
+<application>
+  <component name="ClojureIdeSettings">
+    <option name="coloredParentheses" value="true" />
+    <option name="separateREPLItems" value="true" />
+    <option name="replHistorySize" value="10000" />
+    <option name="replTimeout" value="20" />
+  </component>
+</application>

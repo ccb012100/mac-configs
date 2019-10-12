@@ -7,6 +7,11 @@
     <keyboard-shortcut first-keystroke="shift alt minus" />
     <keyboard-shortcut first-keystroke="ctrl period" />
   </action>
+  <action id=":cursive.actions.paredit/backward">
+    <keyboard-shortcut first-keystroke="ctrl left" />
+    <keyboard-shortcut first-keystroke="ctrl alt b" />
+    <keyboard-shortcut first-keystroke="meta b" />
+  </action>
   <action id=":cursive.actions.paredit/backward-down">
     <keyboard-shortcut first-keystroke="ctrl alt p" />
     <keyboard-shortcut first-keystroke="ctrl meta p" />
@@ -18,6 +23,11 @@
   <action id=":cursive.actions.paredit/barf-backwards">
     <keyboard-shortcut first-keystroke="shift ctrl open_bracket" />
     <keyboard-shortcut first-keystroke="shift meta right" />
+  </action>
+  <action id=":cursive.actions.paredit/forward">
+    <keyboard-shortcut first-keystroke="ctrl right" />
+    <keyboard-shortcut first-keystroke="ctrl alt f" />
+    <keyboard-shortcut first-keystroke="meta f" />
   </action>
   <action id=":cursive.actions.paredit/join">
     <keyboard-shortcut first-keystroke="shift meta j" />
@@ -56,6 +66,7 @@
     <keyboard-shortcut first-keystroke="ctrl open_bracket" />
     <keyboard-shortcut first-keystroke="meta open_bracket" />
   </action>
+  <action id=":cursive.repl.actions/jump-to-repl" />
   <action id=":cursive.repl.actions/next-history-item">
     <keyboard-shortcut first-keystroke="ctrl down" />
     <keyboard-shortcut first-keystroke="meta n" />
@@ -122,6 +133,9 @@
   <action id="Console.Jdbc.Execute" />
   <action id="Console.TableResult.FindInGrid" />
   <action id="Console.TableResult.Submit" />
+  <action id="ConvertIndentsToSpaces">
+    <keyboard-shortcut first-keystroke="ctrl l" second-keystroke="u" />
+  </action>
   <action id="CopyElement" />
   <action id="DirDiffMenu.SynchronizeDiff.All" />
   <action id="Editor Copy">
@@ -185,8 +199,14 @@
     <keyboard-shortcut first-keystroke="shift meta comma" />
     <keyboard-shortcut first-keystroke="meta less" />
   </action>
+  <action id="EditorToggleShowWhitespaces">
+    <keyboard-shortcut first-keystroke="ctrl l" second-keystroke="w" />
+  </action>
   <action id="EditorToggleStickySelection">
     <keyboard-shortcut first-keystroke="shift ctrl 2" />
+  </action>
+  <action id="EditorToggleUseSoftWraps">
+    <keyboard-shortcut first-keystroke="ctrl l" second-keystroke="shift w" />
   </action>
   <action id="Emacs+.AppendNextKill" />
   <action id="Emacs+.BackToIndentation" />
@@ -304,6 +324,7 @@
   </action>
   <action id="EmacsStyleIndent">
     <keyboard-shortcut first-keystroke="tab" />
+    <keyboard-shortcut first-keystroke="meta i" />
   </action>
   <action id="FileChooser.NewFolder" />
   <action id="FindInPath">
@@ -385,6 +406,9 @@
   <action id="ReformatCode">
     <keyboard-shortcut first-keystroke="ctrl l" second-keystroke="ctrl d" />
   </action>
+  <action id="ReopenClosedTab">
+    <keyboard-shortcut first-keystroke="shift meta t" />
+  </action>
   <action id="RiderTypeHierarchy.BaseOnThisType" />
   <action id="RiderUnitTestAppendTestsAction" />
   <action id="RiderUnitTestCoverSolutionAction" />
@@ -448,7 +472,7 @@
   </action>
   <action id="Terminal.SwitchFocusToEditor">
     <keyboard-shortcut first-keystroke="escape" />
-    <keyboard-shortcut first-keystroke="ctrl x" second-keystroke="ctrl o" />
+    <keyboard-shortcut first-keystroke="ctrl x" second-keystroke="o" />
   </action>
   <action id="TodoViewGroupByFlattenPackage" />
   <action id="TodoViewGroupByShowPackages" />
