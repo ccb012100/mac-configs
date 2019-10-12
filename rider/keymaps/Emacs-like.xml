@@ -1,6 +1,6 @@
 <keymap version="1" name="Emacs-like" parent="Emacs+">
   <action id="$Copy">
-    <keyboard-shortcut first-keystroke="ctrl k" second-keystroke="k" />
+    <keyboard-shortcut first-keystroke="ctrl l" second-keystroke="ctrl l" />
   </action>
   <action id="$Redo">
     <keyboard-shortcut first-keystroke="shift ctrl z" />
@@ -49,7 +49,7 @@
   <action id="Console.TableResult.Submit" />
   <action id="DirDiffMenu.SynchronizeDiff.All" />
   <action id="Editor Copy">
-    <keyboard-shortcut first-keystroke="ctrl k" second-keystroke="k" />
+    <keyboard-shortcut first-keystroke="ctrl l" second-keystroke="ctrl l" />
   </action>
   <action id="Editor Redo">
     <keyboard-shortcut first-keystroke="ctrl period" />
@@ -84,7 +84,7 @@
     <keyboard-shortcut first-keystroke="ctrl o" />
   </action>
   <action id="EditorNextWord">
-    <keyboard-shortcut first-keystroke="ctrl meta f" />
+    <keyboard-shortcut first-keystroke="meta f" />
   </action>
   <action id="EditorPageDown">
     <keyboard-shortcut first-keystroke="page_down" />
@@ -109,8 +109,14 @@
     <keyboard-shortcut first-keystroke="shift meta comma" />
     <keyboard-shortcut first-keystroke="meta less" />
   </action>
+  <action id="EditorToggleShowWhitespaces">
+    <keyboard-shortcut first-keystroke="ctrl l" second-keystroke="w" />
+  </action>
   <action id="EditorToggleStickySelection">
     <keyboard-shortcut first-keystroke="shift ctrl 2" />
+  </action>
+  <action id="EditorToggleUseSoftWraps">
+    <keyboard-shortcut first-keystroke="ctrl l" second-keystroke="ctrl w" />
   </action>
   <action id="Emacs+.AppendNextKill" />
   <action id="Emacs+.BackToIndentation" />
@@ -186,10 +192,10 @@
     <keyboard-shortcut first-keystroke="ctrl semicolon" />
   </action>
   <action id="Emacs+.KillRegion">
-    <keyboard-shortcut first-keystroke="ctrl k" second-keystroke="ctrl k" />
+    <keyboard-shortcut first-keystroke="ctrl l" second-keystroke="ctrl k" />
   </action>
   <action id="Emacs+.KillWholeLine">
-    <keyboard-shortcut first-keystroke="ctrl l" />
+    <keyboard-shortcut first-keystroke="ctrl k" />
   </action>
   <action id="Emacs+.KillWord">
     <keyboard-shortcut first-keystroke="meta d" />
@@ -206,6 +212,10 @@
   </action>
   <action id="Emacs+.Recenter" />
   <action id="Emacs+.SaveRegion" />
+  <action id="Emacs+.SwitchToBuffer">
+    <keyboard-shortcut first-keystroke="ctrl x" second-keystroke="b" />
+    <keyboard-shortcut first-keystroke="ctrl x" second-keystroke="m" />
+  </action>
   <action id="Emacs+.TWBegin">
     <keyboard-shortcut first-keystroke="meta less" />
   </action>
@@ -270,6 +280,9 @@
     <keyboard-shortcut first-keystroke="ctrl x" second-keystroke="back_quote" />
   </action>
   <action id="GotoSuperMethod" />
+  <action id="Help.KeymapReference">
+    <keyboard-shortcut first-keystroke="ctrl h" second-keystroke="b" />
+  </action>
   <action id="Images.Editor.ToggleGrid" />
   <action id="ImplementMethods" />
   <action id="InsertLiveTemplate" />
@@ -304,10 +317,10 @@
   </action>
   <action id="Refactorings.QuickListPopupAction">
     <keyboard-shortcut first-keystroke="shift ctrl alt t" />
-    <keyboard-shortcut first-keystroke="ctrl k" second-keystroke="ctrl r" />
+    <keyboard-shortcut first-keystroke="ctrl l" second-keystroke="ctrl r" />
   </action>
   <action id="ReformatCode">
-    <keyboard-shortcut first-keystroke="ctrl k" second-keystroke="ctrl d" />
+    <keyboard-shortcut first-keystroke="ctrl l" second-keystroke="ctrl d" />
   </action>
   <action id="RiderTypeHierarchy.BaseOnThisType" />
   <action id="RiderUnitTestAppendTestsAction" />
@@ -376,6 +389,6 @@
   <action id="Vcs.Log.GoToRef" />
   <action id="ViewSource" />
   <action id="XDebugger.ToggleSortValues">
-    <keyboard-shortcut first-keystroke="ctrl k" second-keystroke="s" />
+    <keyboard-shortcut first-keystroke="ctrl l" second-keystroke="s" />
   </action>
 </keymap>
