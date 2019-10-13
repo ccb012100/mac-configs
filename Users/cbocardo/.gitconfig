@@ -34,7 +34,7 @@
     b = branch
     co = checkout
     d = diff
-    l = log --graph --pretty='format:%Cgreen %h %Cred %cn %Cblue %ci %Cgreen %s %Creset'
+    l = log --graph --pretty='format:%C(yellow) %h %C(magenta) %cn %C(blue) %ci %C(cyan) %s %Creset'
     s = status
 [merge]
 	tool = diffmerge
