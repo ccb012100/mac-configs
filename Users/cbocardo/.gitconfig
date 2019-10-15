@@ -30,7 +30,7 @@
     # resets the previous commit, but keeps all the changes
     # from that commit in the working directory
     undo = reset HEAD~1 --mixed
-    a = add .
+    a = add
     b = branch
     co = checkout
     d = diff
