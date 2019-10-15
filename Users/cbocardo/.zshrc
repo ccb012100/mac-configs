@@ -30,6 +30,13 @@ setopt cdable_vars                     # directory aliases for cd command
 setopt complete_in_word                # completion from within a word/phrase
 
 autoload -U compinit && compinit       # zsh-completions
+zstyle ':completion:*' list-colors 'di=34:ln=35:so=32:pi=33:ex=31:bd=46;34:cd=43;34:su=41;30:sg=46;30:tw=42;30:ow=43;30'
+zstyle ':completion:*' list-prompt %SAt %p: Hit TAB for more, or the character to insert%s
+zstyle ':completion:*' matcher-list '' 'm:{a-z}={A-Z}' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=* l:|=*'
+zstyle ':completion:*' menu select=long
+zstyle ':completion:*' select-prompt %SScrolling active: current selection at %p%s
+zstyle ':completion:*' use-compctl false
+zstyle ':completion:*' verbose true
 
 # iTerm2 shell integration
 test -e "${HOME}/.iterm2_shell_integration.zsh" && \
@@ -64,3 +71,6 @@ bindkey -e                                       # emacs key-bindings
 bindkey '^y' autosuggest-accept                  # for zsh-autosuggestions
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_COMPLETION_TRIGGER=''
+bindkey '^t' fzf-completion
+bindkey '^i' $fzf_default_completion
