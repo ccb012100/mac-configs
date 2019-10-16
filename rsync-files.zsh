@@ -50,7 +50,19 @@ rsync -ti --progress \
       ~/ccb012100/emacs/.emacs.d/packages/
 
 rsync -ti --progress \
-      ~/.emacs.d/packages//file-mode-packages.el \
+      ~/.emacs.d/packages/file-mode-packages.el \
+      ~/ccb012100/emacs/.emacs.d/packages/
+
+rsync -ti --progress \
+      ~/.emacs.d/packages/navigation-packages.el \
+      ~/ccb012100/emacs/.emacs.d/packages/
+
+rsync -ti --progress \
+      ~/.emacs.d/packages/text-manipulation-packages.el \
+      ~/ccb012100/emacs/.emacs.d/packages/
+
+rsync -ti --progress \
+      ~/.emacs.d/packages/display-packages.el \
       ~/ccb012100/emacs/.emacs.d/packages/
 
 ### zsh
