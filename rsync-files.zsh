@@ -8,10 +8,6 @@ rsync -ti --progress \
       ~/ccb012100/emacs/.emacs.d/
 
 rsync -ti --progress \
-      ~/.emacs.d/keybindings.el \
-      ~/ccb012100/emacs/.emacs.d/
-
-rsync -ti --progress \
       ~/.emacs.d/macOS.el \
       ~/ccb012100/emacs/.emacs.d/
 
@@ -19,13 +15,18 @@ rsync -ti --progress \
       ~/.emacs.d/settings.el \
       ~/ccb012100/emacs/.emacs.d/
 
+## keybindings
 rsync -ti --progress \
-      ~/.emacs.d/custom-fn-keybindings.el \
-      ~/ccb012100/emacs/.emacs.d/
+      ~/.emacs.d/keybindings/keybindings.el \
+      ~/ccb012100/emacs/.emacs.d/keybindings/
 
 rsync -ti --progress \
-      ~/.emacs.d/windmove-keybindings.el \
-      ~/ccb012100/emacs/.emacs.d/
+      ~/.emacs.d/keybindings/custom-fn-keybindings.el \
+      ~/ccb012100/emacs/.emacs.d/keybindings/
+
+rsync -ti --progress \
+      ~/.emacs.d/keybindings/windmove-keybindings.el \
+      ~/ccb012100/emacs/.emacs.d/keybindings/
 
 ## packages
 rsync -ti --progress \
