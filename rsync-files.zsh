@@ -1,7 +1,4 @@
 ### Emacs
-rsync -ti --progress \
-      ~/.emacs.d/defuns.el \
-      ~/ccb012100/emacs/.emacs.d/
 
 rsync -ti --progress \
       ~/.emacs.d/init.el \
@@ -14,6 +11,28 @@ rsync -ti --progress \
 rsync -ti --progress \
       ~/.emacs.d/settings.el \
       ~/ccb012100/emacs/.emacs.d/
+
+## functions
+
+rsync -ti --progress \
+      ~/.emacs.d/defuns/defuns.el \
+      ~/ccb012100/emacs/.emacs.d/
+
+rsync -ti --progress \
+      ~/.emacs.d/defuns/theme-fns.el \
+      ~/ccb012100/emacs/.emacs.d/defuns/
+
+rsync -ti --progress \
+      ~/.emacs.d/defuns/navigation-fns.el \
+      ~/ccb012100/emacs/.emacs.d/defuns/
+
+rsync -ti --progress \
+      ~/.emacs.d/defuns/kill-fns.el \
+      ~/ccb012100/emacs/.emacs.d/defuns/
+
+rsync -ti --progress \
+      ~/.emacs.d/defuns/text-manipulations-fns.el \
+      ~/ccb012100/emacs/.emacs.d/defuns/
 
 ## keybindings
 rsync -ti --progress \
