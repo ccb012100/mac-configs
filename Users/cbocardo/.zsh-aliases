@@ -1,22 +1,29 @@
 # zsh aliases
 
 # ls
-alias l='exa'
-alias ls='exa'               # use exa as ls replacement
 alias la='ls -a'
 alias ll='ls -l'
 alias lal='ls -al'
 alias lla='ls -la'
 
-alias cat='bat'              # use bat as cat replacement
+alias lec='echo $?'          # last exit code
 alias cls='clear'            # clear screen
-alias jq='jq -C'             # colorize json
-alias pshell='pwsh'
-alias powershell='pwsh'
+
+alias sesh='tmux new-session -A -s sesh'
+
 alias g='git'
 alias gs='git-status'
+
+alias jq='jq -C'             # colorize json
+alias cat='bat'              # use bat as cat replacement
+
+alias l='exa'
+alias ls='exa'               # use exa as ls replacement
+
 alias tree='exa --tree --level=2'
-alias lec='echo $?'          # last exit code
+
+alias pshell='pwsh'
+alias powershell='pwsh'
 
 # use Neovim instad of Vim
 alias v='nvim'
