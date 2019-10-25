@@ -1,5 +1,8 @@
 # zsh aliases
 
+alias ...='cd ../..'
+alias ....='cd ../../..'
+
 # ls
 alias la='ls -a'
 alias ll='ls -l'
@@ -16,12 +19,10 @@ alias gs='git-status'
 
 alias jq='jq -C'             # colorize json
 alias cat='bat'              # use bat as cat replacement
-
 alias l='exa'
 alias ls='exa'               # use exa as ls replacement
-
+alias ripgrep='rg'
 alias tree='exa --tree --level=2'
-
 alias pshell='pwsh'
 alias powershell='pwsh'
 
