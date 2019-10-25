@@ -50,7 +50,7 @@ tabspaces: 4
 font:
   # Normal (roman) font face
   normal:
-    family: Hack Nerd Font
+      family: SauceCodePro Nerd Font Mono
 
   # Point size
   size: 12.0
