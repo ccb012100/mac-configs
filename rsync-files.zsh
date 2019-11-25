@@ -89,11 +89,11 @@ rsync -ti --progress \
       ~/.zshrc \
       ~/ccb012100/mac-configs/Users/cbocardo/
 rsync -ti --progress \
-      ~/.zsh-aliases \
-      ~/ccb012100/mac-configs/Users/cbocardo/
+      ~/.zsh/.zsh-aliases \
+      ~/ccb012100/mac-configs/Users/cbocardo/.zsh/
 rsync -ti --progress \
-      ~/.zsh-unalias \
-      ~/ccb012100/mac-configs/Users/cbocardo/
+      ~/.zsh/.zsh-unalias \
+      ~/ccb012100/mac-configs/Users/cbocardo/.zsh/
 
 ### Vim/Neovim
 rsync -ti --progress \
