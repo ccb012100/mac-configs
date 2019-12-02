@@ -4,15 +4,14 @@
 # https://rick.cogley.info/post/use-homebrew-zsh-instead-of-the-osx-default/
 export PATH=~/.dotnet/tools:~/tools:$PATH
 export ALTERNATE_EDITOR=""
-export EDITOR="nvim"                   # $EDITOR opens in terminal
-export VISUAL="nvim"                   # $VISUAL opens in GUI mode
+export EDITOR="nvim"                    # $EDITOR opens in terminal
+export VISUAL="nvim"                    # $VISUAL opens in GUI mode
 export DEFAULT_USER=cbocardo
 
 HISTFILE=~/.zsh/.zsh_history
 HISTSIZE=50000
 SAVEHIST=10000
 
-setopt extended_history
 setopt hist_expire_dups_first
 setopt hist_ignore_dups
 setopt hist_ignore_space
@@ -22,14 +21,15 @@ setopt share_history
 setopt hist_reduce_blanks
 setopt hist_find_no_dups
 
-setopt noclobber                       # don't overwrite existing files
-setopt ignoreeof                       # Ctrl-D won't kill the session
+setopt noclobber                        # don't overwrite existing files
+setopt ignoreeof                        # Ctrl-D won't kill the session
 setopt auto_cd
-setopt correctall                      # spelling correction for commands
-setopt cdable_vars                     # directory aliases for cd command
-setopt complete_in_word                # completion from within a word/phrase
+setopt correctall                       # spelling correction for commands
+setopt cdable_vars                      # directory aliases for cd command
+setopt complete_in_word                 # completion from within a word/phrase
+setopt no_case_glob                     # case-insensitive globbing
 
-autoload -U compinit && compinit       # zsh-completions
+autoload -U compinit && compinit        # zsh-completions
 zstyle ':completion:*' list-colors 'di=34:ln=35:so=32:pi=33:ex=31:bd=46;34:cd=43;34:su=41;30:sg=46;30:tw=42;30:ow=43;30'
 zstyle ':completion:*' list-prompt %SAt %p: Hit TAB for more, or the character to insert%s
 zstyle ':completion:*' matcher-list '' 'm:{a-z}={A-Z}' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=* l:|=*'
@@ -42,7 +42,7 @@ zstyle ':completion:*' verbose true
 test -e "${HOME}/.iterm2_shell_integration.zsh" && \
     source "${HOME}/.iterm2_shell_integration.zsh"
 
-source ~/tools/z/z.sh                  # z -jump around
+source ~/tools/z/z.sh                       # z -jump around
 source ~/.zsh/.zsh-aliases                  # custom aliases
 source ~/.zsh/.zsh-machine-specific-aliases # not in source control
 
@@ -61,14 +61,14 @@ if [ -n "$RANGER_LEVEL" ]; then export PS1="[ranger]$PS1"; fi
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
 
-fpath=(/usr/local/share/zsh-completions $fpath)  # activate zsh-completions
+fpath=(/usr/local/share/zsh-completions $fpath) # activate zsh-completions
 
 source ~/tools/powerlevel10k/powerlevel10k.zsh-theme
 source ~/tools/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/tools/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-bindkey -e                                       # emacs key-bindings
-bindkey '^y' autosuggest-accept                  # for zsh-autosuggestions
+bindkey -e                                      # emacs key-bindings
+bindkey '^y' autosuggest-accept                 # for zsh-autosuggestions
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_COMPLETION_TRIGGER=''
