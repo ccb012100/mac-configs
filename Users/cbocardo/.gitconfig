@@ -1,45 +1,52 @@
 [core]
-	excludesfile = /Users/cbocardo/.gitignore_global
-	autocrlf = input
-	pager = diff-so-fancy | less --tabs=4 -RFX
-    editor = emacs
+    excludesfile = /Users/cbocardo/.gitignore_global
+    autocrlf = off
+    pager = diff-so-fancy | less --tabs=4 -RFX
+    editor = nvim
+	filemode = false
 [user]
-	name = Christopher Bocardo
-	email = email@mail.com
+    name = Christopher Bocardo
+    email = username@domain
 [commit]
-	template = /Users/cbocardo/.stCommitMsg
+    template = /Users/cbocardo/.stCommitMsg
 [color]
-	ui = true
+    ui = true
 [color "diff-highlight"]
-	oldNormal = red bold
-	oldHighlight = red bold 52
-	newNormal = green bold
-	newHighlight = green bold 22
+    oldNormal = red bold
+    oldHighlight = red bold 52
+    newNormal = green bold
+    newHighlight = green bold 22
 [color "diff"]
-	meta = yellow
-	frag = magenta bold
-	commit = yellow bold
-	old = red bold
-	new = green bold
-	whitespace = red reverse
+    meta = yellow
+    frag = magenta bold
+    commit = yellow bold
+    old = red bold
+    new = green bold
+    whitespace = red reverse
 [pull]
-	rebase = true
+    rebase = true
 [alias]
-	cm = commit -m
-	amend = commit -a --amend
-    # resets the previous commit, but keeps all the changes
-    # from that commit in the working directory
-    undo = reset HEAD~1 --mixed
+    alias = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
+    amend = commit -a --amend
+    cm = commit -m
     a = add
     b = branch
+    br = branch --remote
+    cb = checkout -B
     co = checkout
     d = diff
-    l = log --graph --pretty='format:%C(yellow) %h %C(magenta) %cn %C(blue) %ci %C(cyan) %s %Creset'
+    l = log --graph --pretty='format:%C(yellow) %h %C(magenta) %cn %Cblue %ci %C(cyan) %s %Creset'
+    pub = push --set-upstream origin $(git rev-parse — abbrev-ref HEAD)
+    ruo = remote update origin --prune # update local list of remote branches
     s = status
+    # resets the previous commit but
+    # keep all the changes from that commit in the working directory
+    undo = reset HEAD~1 --mixed
 [merge]
-	tool = diffmerge
-[mergetool "diffmerge"]
-	cmd = diffmerge --merge --result=$MERGED $LOCAL $BASE $REMOTE
-	trustExitCode = true
+    tool = vscode
+[mergetool "vscode"]
+    cmd = code --wait $MERGED
+[diff]
+    tool = vscode
 [difftool "vscode"]
-	cmd = code --wait --diff $LOCAL $REMOTE
+    cmd = code --wait --diff $LOCAL $REMOTE
