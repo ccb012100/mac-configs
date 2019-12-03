@@ -2,6 +2,8 @@
 
 alias ...='cd ../..'
 alias ....='cd ../../..'
+alias .....='cd ../../../..'
+alias ......='cd ../../../../..'
 
 # ls
 alias la='ls -a'
@@ -16,6 +18,7 @@ alias sesh='tmux new-session -A -s sesh'
 
 alias g='git'
 alias gs='git-status'
+alias gitpub='git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)'
 
 alias jq='jq -C'             # colorize json
 alias cat='bat'              # use bat as cat replacement
