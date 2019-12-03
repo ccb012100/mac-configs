@@ -8,7 +8,7 @@ export EDITOR="nvim"                    # $EDITOR opens in terminal
 export VISUAL="nvim"                    # $VISUAL opens in GUI mode
 export DEFAULT_USER=cbocardo
 
-HISTFILE=~/.zsh/.zsh_history
+HISTFILE=~/.zsh/zsh_history
 HISTSIZE=50000
 SAVEHIST=10000
 
@@ -43,8 +43,8 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && \
     source "${HOME}/.iterm2_shell_integration.zsh"
 
 source ~/tools/z/z.sh                       # z -jump around
-source ~/.zsh/.zsh-aliases                  # custom aliases
-source ~/.zsh/.zsh-machine-specific-aliases # not in source control
+source ~/.zsh/zsh-aliases                  # custom aliases
+source ~/.zsh/zsh-machine-specific-aliases # not in source control
 
 # functions to cd then ls in one step
 function cls { cd "$@" && ls }
