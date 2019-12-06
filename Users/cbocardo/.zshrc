@@ -4,8 +4,8 @@
 # https://rick.cogley.info/post/use-homebrew-zsh-instead-of-the-osx-default/
 export PATH=~/.dotnet/tools:~/tools:$PATH
 export ALTERNATE_EDITOR=""
-export EDITOR="nvim"                    # $EDITOR opens in terminal
-export VISUAL="nvim"                    # $VISUAL opens in GUI mode
+export EDITOR="nvim"                        # $EDITOR opens in terminal
+export VISUAL="nvim"                        # $VISUAL opens in GUI mode
 export DEFAULT_USER=cbocardo
 
 HISTFILE=~/.zsh/zsh_history
@@ -21,28 +21,34 @@ setopt share_history
 setopt hist_reduce_blanks
 setopt hist_find_no_dups
 
-setopt noclobber                        # don't overwrite existing files
-setopt ignoreeof                        # Ctrl-D won't kill the session
+setopt noclobber                            # don't overwrite existing files
+setopt ignoreeof                            # Ctrl-D won't kill the session
 setopt auto_cd
-setopt correctall                       # spelling correction for commands
-setopt cdable_vars                      # directory aliases for cd command
-setopt complete_in_word                 # completion from within a word/phrase
-setopt no_case_glob                     # case-insensitive globbing
+setopt correctall                           # spelling correction for commands
+setopt cdable_vars                          # directory aliases for cd command
+setopt complete_in_word                     # complete within a word/phrase
+setopt no_case_glob                         # case-insensitive globbing
 
-autoload -U compinit && compinit        # zsh-completions
+autoload -U compinit && compinit            # zsh-completions
 zstyle ':completion:*' list-colors 'di=34:ln=35:so=32:pi=33:ex=31:bd=46;34:cd=43;34:su=41;30:sg=46;30:tw=42;30:ow=43;30'
 zstyle ':completion:*' list-prompt %SAt %p: Hit TAB for more, or the character to insert%s
-zstyle ':completion:*' matcher-list '' 'm:{a-z}={A-Z}' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=* l:|=*'
+#zstyle ':completion:*' matcher-list '' 'm:{a-z}={A-Z}' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=* l:|=*'
 zstyle ':completion:*' menu select=long
 zstyle ':completion:*' select-prompt %SScrolling active: current selection at %p%s
 zstyle ':completion:*' use-compctl false
 zstyle ':completion:*' verbose true
+zstyle ':completion:*' expand list-suffixes # partial completion suggestions
+zstyle ':completion:*' expand prefix suffix # partial completion suggestions
+
+# case insensitive path-completion
+# from https://scriptingosx.com/2019/07/moving-to-zsh-part-5-completions/
+zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*'
 
 # iTerm2 shell integration
 test -e "${HOME}/.iterm2_shell_integration.zsh" && \
     source "${HOME}/.iterm2_shell_integration.zsh"
 
-source ~/tools/z/z.sh                       # z -jump around
+source ~/tools/z/z.sh                      # z -jump around
 source ~/.zsh/zsh-aliases                  # custom aliases
 source ~/.zsh/zsh-machine-specific-aliases # not in source control
 
