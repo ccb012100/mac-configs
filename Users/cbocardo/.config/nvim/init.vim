@@ -62,6 +62,8 @@ set backupdir=.backup/,~/.backup/,/tmp//
 set directory=.swp/,~/.swp/,/tmp//
 set undodir=.undo/,~/.undo/,/tmp//
 
+set rtp+=/usr/local/opt/fzf
+
 "" Show cursorline and columnline in Insert Mode
 "" Only use relative line numbers in Normal Mode
 autocmd InsertEnter * set cursorline cursorcolumn norelativenumber
