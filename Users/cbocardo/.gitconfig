@@ -28,6 +28,7 @@
 [alias]
     alias = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
     amend = commit -a --amend
+    c = commit
     cm = commit -m
     a = add
     b = branch
@@ -36,7 +37,8 @@
     co = checkout
     d = diff
     l = log --graph --pretty='format:%C(yellow) %h %C(magenta) %cn %Cblue %ci %C(cyan) %s %Creset'
-    pub = push --set-upstream origin $(git rev-parse — abbrev-ref HEAD)
+    master = checkout master
+    pub = !git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)
     ruo = remote update origin --prune # update local list of remote branches
     s = status
     # resets the previous commit but
