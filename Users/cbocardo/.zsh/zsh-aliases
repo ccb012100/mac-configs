@@ -29,6 +29,7 @@ alias tree='exa --tree --level=2'
 alias pshell='pwsh'
 alias powershell='pwsh'
 alias d='docker'
+alias py='python3'
 
 # use Neovim instad of Vim
 alias v='nvim'
