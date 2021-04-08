@@ -111,14 +111,6 @@ colors:
   # Indexed Colors
   indexed_colors: []
 
-# Visual Bell
-#
-# Specifying a `duration` of `0` will disable the visual bell.
-visual_bell:
-  animation: EaseOutExpo
-  duration: 1
-  color: '0xffffff'
-
 # Background opacity
 background_opacity: 1.0
 
