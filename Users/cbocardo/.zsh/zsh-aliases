@@ -38,5 +38,8 @@ alias vim='nvim'
 alias vimdiff='nvim -d'
 
 # emacs
-alias e='emacs'
 alias emacs='emacsclient -n' # use emacsclient
+
+# cargo (rust)
+alias cr='cargo run'
+alias cb='cargo build'
