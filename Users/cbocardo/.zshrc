@@ -29,6 +29,12 @@ setopt cdable_vars                          # directory aliases for cd command
 setopt complete_in_word                     # complete within a word/phrase
 setopt no_case_glob                         # case-insensitive globbing
 
+# directory history
+# see http://zsh.sourceforge.net/Intro/intro_6.html
+DIRSTACKSIZE=10
+setopt autopushd pushdminus pushdsilent pushdtohome
+alias dh='dirs -v'
+
 autoload -U compinit && compinit            # zsh-completions
 zstyle ':completion:*' list-colors 'di=34:ln=35:so=32:pi=33:ex=31:bd=46;34:cd=43;34:su=41;30:sg=46;30:tw=42;30:ow=43;30'
 zstyle ':completion:*' list-prompt %SAt %p: Hit TAB for more, or the character to insert%s

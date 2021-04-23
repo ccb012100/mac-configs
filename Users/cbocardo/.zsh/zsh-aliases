@@ -43,3 +43,6 @@ alias emacs='emacsclient -n' # use emacsclient
 # cargo (rust)
 alias cr='cargo run'
 alias cb='cargo build'
+
+# docker
+alias dc='docker-compose'
