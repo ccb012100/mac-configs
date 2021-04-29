@@ -5005,6 +5005,15 @@
 	<true/>
 	<key>GlobalKeyMap</key>
 	<dict>
+		<key>0x60-0x40000-0x32</key>
+		<dict>
+			<key>Action</key>
+			<integer>30</integer>
+			<key>Label</key>
+			<string></string>
+			<key>Text</key>
+			<string></string>
+		</dict>
 		<key>0xf700-0x300000</key>
 		<dict>
 			<key>Action</key>
@@ -5097,7 +5106,7 @@
 			<key>Action</key>
 			<integer>2</integer>
 			<key>Label</key>
-			<string>Previout Tab</string>
+			<string>Previous Tab</string>
 			<key>Text</key>
 			<string></string>
 		</dict>
