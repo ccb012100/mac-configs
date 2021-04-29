@@ -6,7 +6,6 @@
 	filemode = false
 [user]
     name = Christopher Bocardo
-    email = username@domain
 [commit]
     template = /Users/cbocardo/.stCommitMsg
 [color]
@@ -36,7 +35,8 @@
     cb = checkout -B
     co = checkout
     d = diff
-    l = log --graph --pretty='format:%C(yellow) %h %C(magenta) %cn %Cblue %ci %C(cyan) %s %Creset'
+    l = log --pretty='format:%C(yellow)%h %C(magenta)%as %C(blue)%aL %C(cyan)%s%C(reset)'
+    main = checkout main
     master = checkout master
     pub = !git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)
     ruo = remote update origin --prune # update local list of remote branches
