@@ -7,6 +7,7 @@ export ALTERNATE_EDITOR=""
 export EDITOR="nvim"                        # $EDITOR opens in terminal
 export VISUAL="nvim"                        # $VISUAL opens in GUI mode
 export DEFAULT_USER=cbocardo
+export GPG_TTY=$(tty)                       # for gpg
 
 HISTFILE=~/.zsh/zsh_history
 HISTSIZE=50000
