@@ -1,6 +1,6 @@
 [core]
     excludesfile = /Users/cbocardo/.gitignore_global
-    autocrlf = off
+    autocrlf = input
     pager = diff-so-fancy | less --tabs=4 -RFX
     editor = nvim
 	filemode = false
@@ -8,6 +8,7 @@
     name = Christopher Bocardo
 [commit]
     template = /Users/cbocardo/.stCommitMsg
+    gpgsign = true
 [color]
     ui = true
 [color "diff-highlight"]
@@ -25,6 +26,7 @@
 [pull]
     rebase = true
 [alias]
+    acm = ! git add . && git commit -m
     alias = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
     amend = commit -a --amend
     c = commit
@@ -52,3 +54,8 @@
     tool = vscode
 [difftool "vscode"]
     cmd = code --wait --diff $LOCAL $REMOTE
+[includeIf "gitdir:~/ccb012100/"]
+  # set all repos in ~/ccb012100 to use personal username/email
+  path = ~/ccb012100/.gitconfig
+[gpg]
+    program = gpg
