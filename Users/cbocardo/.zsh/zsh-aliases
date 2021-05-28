@@ -46,3 +46,6 @@ alias cb='cargo build'
 
 # docker
 alias dc='docker-compose'
+
+# golang
+alias gorun='go run .'

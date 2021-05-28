@@ -13,7 +13,7 @@
 	<key>AlternateMouseScroll</key>
 	<true/>
 	<key>BadgeFont</key>
-	<string>Ubuntu Mono</string>
+	<string>IBM Plex Mono</string>
 	<key>ColoredSelectedTabOutlineStrength</key>
 	<real>1.5</real>
 	<key>Custom Color Presets</key>
@@ -5491,8 +5491,34 @@
 			</dict>
 			<key>Guid</key>
 			<string>41C3B77A-0408-4DFB-A91F-A692F66CA4A5</string>
+			<key>Has Hotkey</key>
+			<true/>
 			<key>Horizontal Spacing</key>
 			<real>1</real>
+			<key>HotKey Activated By Modifier</key>
+			<false/>
+			<key>HotKey Alternate Shortcuts</key>
+			<array/>
+			<key>HotKey Characters</key>
+			<string> </string>
+			<key>HotKey Characters Ignoring Modifiers</key>
+			<string> </string>
+			<key>HotKey Key Code</key>
+			<integer>49</integer>
+			<key>HotKey Modifier Activation</key>
+			<integer>0</integer>
+			<key>HotKey Modifier Flags</key>
+			<integer>524288</integer>
+			<key>HotKey Window Animates</key>
+			<true/>
+			<key>HotKey Window AutoHides</key>
+			<true/>
+			<key>HotKey Window Dock Click Action</key>
+			<integer>2</integer>
+			<key>HotKey Window Floats</key>
+			<true/>
+			<key>HotKey Window Reopens On Activation</key>
+			<false/>
 			<key>Icon</key>
 			<integer>1</integer>
 			<key>Idle Code</key>
@@ -5819,7 +5845,7 @@
 			<key>Rows</key>
 			<integer>60</integer>
 			<key>Screen</key>
-			<integer>-1</integer>
+			<integer>-2</integer>
 			<key>Scrollback Lines</key>
 			<integer>1000</integer>
 			<key>Selected Text Color</key>
@@ -5856,6 +5882,8 @@
 			<true/>
 			<key>Silence Bell</key>
 			<false/>
+			<key>Space</key>
+			<integer>-1</integer>
 			<key>Status Bar Layout</key>
 			<dict>
 				<key>advanced configuration</key>
@@ -6846,6 +6874,8 @@
 	<false/>
 	<key>RightCommand</key>
 	<integer>8</integer>
+	<key>SavePasteHistory</key>
+	<true/>
 	<key>SensitiveScrollWheel</key>
 	<true/>
 	<key>SeparateStatusBarsPerPane</key>
