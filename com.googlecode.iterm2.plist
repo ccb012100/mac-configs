@@ -5131,10 +5131,16 @@
 	</dict>
 	<key>HapticFeedbackForEsc</key>
 	<true/>
+	<key>HideFromDockAndAppSwitcher</key>
+	<true/>
+	<key>HideMenuBarInFullscreen</key>
+	<false/>
 	<key>HideTab</key>
 	<true/>
 	<key>HotkeyMigratedFromSingleToMulti</key>
 	<true/>
+	<key>HotkeyWindowsExcludedFromCycling</key>
+	<false/>
 	<key>IRMemory</key>
 	<integer>100</integer>
 	<key>LeftCommand</key>
@@ -5395,7 +5401,7 @@
 			<key>Blink Allowed</key>
 			<true/>
 			<key>Blinking Cursor</key>
-			<false/>
+			<true/>
 			<key>Blur</key>
 			<false/>
 			<key>Bold Color</key>
@@ -5473,7 +5479,7 @@
 			<key>Disable Window Resizing</key>
 			<true/>
 			<key>Draw Powerline Glyphs</key>
-			<false/>
+			<true/>
 			<key>Flashing Bell</key>
 			<true/>
 			<key>Foreground Color</key>
@@ -5496,19 +5502,19 @@
 			<key>Horizontal Spacing</key>
 			<real>1</real>
 			<key>HotKey Activated By Modifier</key>
-			<false/>
+			<true/>
 			<key>HotKey Alternate Shortcuts</key>
 			<array/>
 			<key>HotKey Characters</key>
-			<string> </string>
+			<string></string>
 			<key>HotKey Characters Ignoring Modifiers</key>
-			<string> </string>
+			<string></string>
 			<key>HotKey Key Code</key>
-			<integer>49</integer>
-			<key>HotKey Modifier Activation</key>
 			<integer>0</integer>
+			<key>HotKey Modifier Activation</key>
+			<integer>3</integer>
 			<key>HotKey Modifier Flags</key>
-			<integer>524288</integer>
+			<integer>0</integer>
 			<key>HotKey Window Animates</key>
 			<true/>
 			<key>HotKey Window AutoHides</key>
@@ -5847,7 +5853,7 @@
 			<key>Screen</key>
 			<integer>-2</integer>
 			<key>Scrollback Lines</key>
-			<integer>1000</integer>
+			<integer>0</integer>
 			<key>Selected Text Color</key>
 			<dict>
 				<key>Alpha Component</key>
@@ -6094,7 +6100,7 @@
 			<key>Transparency</key>
 			<real>0.0</real>
 			<key>Unlimited Scrollback</key>
-			<false/>
+			<true/>
 			<key>Use Bold Font</key>
 			<true/>
 			<key>Use Bright Bold</key>
@@ -6879,7 +6885,7 @@
 	<key>SensitiveScrollWheel</key>
 	<true/>
 	<key>SeparateStatusBarsPerPane</key>
-	<false/>
+	<true/>
 	<key>ShowBookmarkName</key>
 	<false/>
 	<key>SmartPlacement</key>
@@ -6917,6 +6923,8 @@
 	<array>
 		<string>Command History</string>
 	</array>
+	<key>UIElementRequiresHotkeys</key>
+	<true/>
 	<key>UseBorder</key>
 	<true/>
 	<key>UseModernScrollWheelAccumulator</key>
