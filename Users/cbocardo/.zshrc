@@ -3,6 +3,8 @@
 # for setting Homebrew version to run as default shell, see:
 # https://rick.cogley.info/post/use-homebrew-zsh-instead-of-the-osx-default/
 export PATH=~/.dotnet/tools:~/tools:$PATH
+export PATH=~/go/bin
+
 export ALTERNATE_EDITOR=""
 export EDITOR="nvim"                        # $EDITOR opens in terminal
 export VISUAL="nvim"                        # $VISUAL opens in GUI mode
@@ -67,7 +69,7 @@ function clal { cd "$@" && ls -lal }
 function clla { cd "$@" && ls -lla }
 
 # open new emacs-frame
-function new-frame { emacsclient -e "(new-frame)" } 
+function new-frame { emacsclient -e "(new-frame)" }
 
 # show when running in a shell that was spawned by ranger
 if [ -n "$RANGER_LEVEL" ]; then export PS1="[ranger]$PS1"; fi

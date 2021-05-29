@@ -48,4 +48,4 @@ alias cb='cargo build'
 alias dc='docker-compose'
 
 # golang
-alias gorun='go run .'
+alias gr='go run .'
