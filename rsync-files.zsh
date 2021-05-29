@@ -1,4 +1,7 @@
 # Sync config files to git repo
+# to run every day at 12:00,
+# run `crontab -e` and add the following line:
+# "0 12 * * * ~/.rsync-files.zsh"
 
 ## Emacs
 
