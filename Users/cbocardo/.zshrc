@@ -2,8 +2,7 @@
 # located in ~/.zshrc
 # for setting Homebrew version to run as default shell, see:
 # https://rick.cogley.info/post/use-homebrew-zsh-instead-of-the-osx-default/
-export PATH=~/.dotnet/tools:~/tools:$PATH
-export PATH=~/go/bin
+export PATH=~/.dotnet/tools:~/go/bin:~/tools:$PATH
 
 export ALTERNATE_EDITOR=""
 export EDITOR="nvim"                        # $EDITOR opens in terminal
