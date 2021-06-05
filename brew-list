@@ -29,6 +29,7 @@ gnu-getopt
 gnupg
 gnutls
 guile
+highlight
 htop
 httpie
 icu4c

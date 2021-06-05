@@ -30,6 +30,7 @@ alias pshell='pwsh'
 alias powershell='pwsh'
 alias d='docker'
 alias py='python3'
+alias hi='highlight --style base16/gruvbox-dark-hard'
 
 # use Neovim instad of Vim
 alias v='nvim'
