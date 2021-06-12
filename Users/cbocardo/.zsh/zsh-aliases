@@ -21,7 +21,6 @@ alias gs='git-status'
 alias gitpub='git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)'
 
 alias jq='jq -C'             # colorize json
-alias cat='bat'              # use bat as cat replacement
 alias l='exa'
 alias ls='exa'               # use exa as ls replacement
 alias ripgrep='rg'
