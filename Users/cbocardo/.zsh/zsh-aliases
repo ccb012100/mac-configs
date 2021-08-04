@@ -10,7 +10,6 @@ alias la='ls -a'
 alias ll='ls -l'
 alias lal='ls -al'
 alias lla='ls -la'
-alias lsd='ls -d */'
 
 alias lec='echo $?'          # last exit code
 alias cls='clear'            # clear screen
@@ -44,6 +43,7 @@ alias emacs='emacsclient -n' # use emacsclient
 # cargo (rust)
 alias cr='cargo run'
 alias cb='cargo build'
+alias cc='cargo check'
 
 # docker
 alias dc='docker-compose'
