@@ -1,2 +1,2 @@
 # mac-configs
-config files for mac os
+config files for macos
