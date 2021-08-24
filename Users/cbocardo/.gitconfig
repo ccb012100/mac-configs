@@ -1,11 +1,9 @@
 [core]
     excludesfile = /Users/cbocardo/.gitignore_global
-    autocrlf = input
+	autocrlf = input
     pager = diff-so-fancy | less --tabs=4 -RFX
     editor = nvim
 	filemode = false
-[user]
-    name = Christopher Bocardo
 [commit]
     template = /Users/cbocardo/.stCommitMsg
     gpgsign = true
@@ -24,12 +22,11 @@
     new = green bold
     whitespace = red reverse
 [pull]
-    rebase = true
+	ff = only
 [alias]
-    acm = ! git add . && git commit -m
+    acm = ! git add -A && git commit -m
     alias = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
     amend = commit -a --amend
-    c = commit
     cm = commit -m
     a = add
     b = branch
@@ -55,7 +52,22 @@
 [difftool "vscode"]
     cmd = code --wait --diff $LOCAL $REMOTE
 [includeIf "gitdir:~/ccb012100/"]
-  # set all repos in ~/ccb012100 to use personal username/email
-  path = ~/ccb012100/.gitconfig
+    # set all repos in ~/ccb012100 to use personal username/email
+    path = ~/ccb012100/.gitconfig
+[includeIf "gitdir:~/vpay-repos/"]
+    # set all repos in ~/vpay-repos to use work username/email
+    path = ~/vpay-repos/.gitconfig
 [gpg]
-    program = gpg
+	program = gpg
+[pager]
+    diff = delta
+    log = delta
+    reflog = delta
+    show = delta
+[delta]
+    plus-style = "syntax #012800"
+    minus-style = "syntax #340001"
+    syntax-theme = Dracula
+    navigate = true
+[interactive]
+    diffFilter = delta --color-only
