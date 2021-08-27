@@ -147,3 +147,8 @@ rsync -ti --progress \
 rsync -ti --progress \
       ~/.config/karabiner/karabiner.json \
       ~/ccb012100/mac-configs/Users/cbocardo/.config/karabiner/
+
+## powerlevel10k
+rsync -ti --progress \
+      ~/.p10k.zsh \
+      ~/ccb012100/mac-configs/Users/cbocardo/
