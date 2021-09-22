@@ -55,8 +55,8 @@
     # set all repos in ~/ccb012100 to use personal username/email
     path = ~/ccb012100/.gitconfig
 [includeIf "gitdir:~/vpay-repos/"]
-    # set all repos in ~/vpay-repos to use work username/email
-    path = ~/vpay-repos/.gitconfig
+    # set all repos in ~/ to use work username/email
+    path = ~/repos/.gitconfig
 [gpg]
 	program = gpg
 [pager]
